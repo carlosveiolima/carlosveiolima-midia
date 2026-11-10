@@ -271,7 +271,8 @@ def main():
         if run_ > best: best, bt = run_, t[i]
     if best / FPS_A > STATIC_MAX: R.append(('AVISO', f'{best/FPS_A:.1f}s sem corte/zoom/card (até {bt:.1f}s): risco de queda de retenção'))
     # primeiro quadro
-    if masks[0].mean() < 0.01: R.append(('FALHA', 'Primeiro quadro sem texto: a tese precisa estar na tela em 0,0s'))
+    if (A.ass or A.base) and masks[0].mean() < 0.01: R.append(('FALHA', 'Primeiro quadro sem texto: a tese precisa estar na tela em 0,0s'))
+    if not (A.ass or A.base): R.append(('AVISO', 'Sem --ass/--base: rosto x texto e gancho no quadro 0 conferidos só no sheet.jpg (olhe com Read)'))
     if fin[0].mean() < 20: R.append(('FALHA', 'Primeiro quadro preto'))
     # ASS: tempos e cobertura da fala
     blocks = []
