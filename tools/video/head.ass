@@ -1,0 +1,18 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,78,&H00FFFFFF,&H00FFFFFF,&H00101010,&H90000000,0,0,0,0,100,100,1,0,1,7,3,2,80,80,560,1
+Style: Hook,Inter ExtraBold,94,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,0,0,3,24,0,8,70,70,170,1
+Style: HookG,Inter ExtraBold,94,&H001A2514,&H00FFFFFF,&H0070BAE2,&H0070BAE2,0,0,0,0,100,100,0,0,3,24,0,8,70,70,300,1
+Style: Lb,Inter ExtraBold,48,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,1,0,3,16,0,7,60,60,170,1
+Style: Q,Inter ExtraBold,78,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,0,0,3,24,0,8,70,70,190,1
+Style: QG,Inter ExtraBold,60,&H001A2514,&H00FFFFFF,&H0070BAE2,&H0070BAE2,0,0,0,0,100,100,0,0,3,18,0,8,70,70,420,1
+Style: Sig,Inter Display,52,&H00FFFFFF,&H00FFFFFF,&H00101010,&H80000000,0,0,0,0,100,100,0,0,1,4,1,2,80,80,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
