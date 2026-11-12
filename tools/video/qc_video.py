@@ -184,6 +184,15 @@ def main():
         am = render_ass(A.ass, p['dur'])[:n]
         for i, m in enumerate(am): masks[i] |= m
         cm = render_ass(A.ass, p['dur'], styles=cap_st)[:n]
+        # textos não-legenda (gancho, faixa, pergunta, CTA) não podem encostar uns nos outros
+        sts = sorted({e['st'] for e in ass_events(A.ass)} - cap_st)
+        per = {st: render_ass(A.ass, p['dur'], styles={st})[:n] for st in sts}
+        k_ = cv2.getStructuringElement(cv2.MORPH_RECT, (9, 9))
+        for i1 in range(len(sts)):
+            for i2 in range(i1 + 1, len(sts)):
+                hit = [t[i] if False else i / FPS_A for i in range(min(len(per[sts[i1]]), len(per[sts[i2]])))
+                       if (cv2.dilate(per[sts[i1]][i].astype(np.uint8), k_) & per[sts[i2]][i].astype(np.uint8)).sum() > 50]
+                if hit: R.append(('FALHA', f'"{sts[i1]}" encosta em "{sts[i2]}" (texto quebrou linha ou caixas sobrepostas) em {len(hit)/FPS_A:.1f}s, ex.: {hit[0]:.1f}s'))
         om = render_ass(A.ass, p['dur'], exclude=cap_st)[:n]
     # rosto
     det = cv2.CascadeClassifier(CASC)
@@ -192,6 +201,11 @@ def main():
         g = cv2.equalizeHist(cv2.cvtColor(f, cv2.COLOR_BGR2GRAY))
         fs = det.detectMultiScale(g, 1.1, 6, minSize=(70, 70))
         faces.append(max(fs, key=lambda r: r[2] * r[3]) if len(fs) else None)
+    # descarta detecções fora da posição típica do rosto (bolso, garrafa, estampa)
+    ok_ = [f for f in faces if f is not None]
+    if len(ok_) >= 5:
+        my = np.median([f[1] + f[3] / 2 for f in ok_]); mx = np.median([f[0] + f[2] / 2 for f in ok_]); mh = np.median([f[3] for f in ok_])
+        faces = [f if f is not None and abs(f[1] + f[3] / 2 - my) < 0.7 * mh and abs(f[0] + f[2] / 2 - mx) < 0.9 * mh and f[3] > 0.6 * mh else None for f in faces]
     # preenche buracos curtos (até 1 s) com o último rosto visto
     last, gap = None, 0
     for i in range(n):

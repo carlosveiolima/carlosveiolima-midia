@@ -2,11 +2,11 @@ import json,subprocess,os,sys,numpy as np
 sys.path.insert(0,'/tmp/claude-0/-home-claude/8b78c0ee-8be5-5b5a-b18f-32b954b96fad/scratchpad/vqc')
 import layout
 W=os.path.dirname(os.path.abspath(__file__))
-SRC={"47":"/mnt/user-data/uploads/133047.mp4","48":"/mnt/user-data/uploads/133048.mp4"}
+SRC={"34":"/mnt/user-data/uploads/139234.mp4","36":"/mnt/user-data/uploads/139236.mp4"}
 WL={k:json.load(open(f"{W}/w{k}.json")) for k in SRC}
 DB={}
 for k in SRC:
-    au=np.fromfile(f"{W}/1330{k}.f32",dtype=np.float32)
+    au=np.fromfile(f"{W}/a{k}.f32",dtype=np.float32)
     r=np.sqrt(np.convolve(au**2,np.ones(320)/320,'same'))[::80]; DB[k]=20*np.log10(r+1e-6)
 def quiet(k,t0,t1):
     i0,i1=int(t0*200),int(t1*200)+1; return (i0+int(np.argmin(DB[k][i0:i1])))/200
@@ -26,7 +26,7 @@ def sp_end(k,t,lim,th=-30):
 VF="hqdn3d=2:1.5:4:3,curves=all='0/0 0.2/0.27 0.5/0.6 0.85/0.9 1/1',eq=gamma=1.06:contrast=1.05:saturation=1.08,colorbalance=rs=-0.04:bs=0.05:rm=-0.04:bm=0.04,unsharp=5:5:0.7"
 def run(a): subprocess.run(["ffmpeg","-threads","3","-v","error","-y"]+a,check=True)
 GOLD="&H70BAE2&"
-def build(name,segs,fixes,keys,hook,q,chips,cards,cover_ms=None,gamma=1.0):
+def build(name,segs,fixes,keys,hook,q,chips,cards,cover_ms=None,gamma=1.0,tail=2.8):
     VFX=VF+(f',eq=gamma={gamma:.3f}' if gamma>1.001 else '')
     # silence floor per source for internal trims
     pieces=[];t=0;words=[];z=0
@@ -51,7 +51,10 @@ def build(name,segs,fixes,keys,hook,q,chips,cards,cover_ms=None,gamma=1.0):
     TOT=t
     words=[w for w in words if w[0]]
     open(f"{W}/{name}.txt","w").write("".join(f"file '{p[0]}'\n" for p in pieces))
-    run(["-f","concat","-safe","0","-i",f"{W}/{name}.txt","-c","copy",f"{W}/{name}_base.mp4"])
+    run(["-f","concat","-safe","0","-i",f"{W}/{name}.txt","-c","copy",f"{W}/{name}_raw.mp4"])
+    # quadro final congelado (end card): pergunta/CTA entram depois da última palavra, sem tapar legenda
+    run(["-i",f"{W}/{name}_raw.mp4","-vf",f"tpad=stop_mode=clone:stop_duration={tail}","-af",f"apad=pad_dur={tail}","-c:v","libx264","-preset","veryfast","-crf","17","-c:a","aac","-b:a","192k","-ar","48000",f"{W}/{name}_base.mp4"])
+    SPEECH_END=TOT; TOT=TOT+tail
     LA=layout.analyze(f"{W}/{name}_base.mp4"); print("layout",LA)
     def wt(key): return next(w[1] for w in words if w[3]==key)
     def T(x):
@@ -84,7 +87,7 @@ def build(name,segs,fixes,keys,hook,q,chips,cards,cover_ms=None,gamma=1.0):
     sc=f'\\fscx{hs}\\fscy{hs}'
     ev.append(f"Dialogue: 3,{fmt(0)},{fmt(hook_end)},Hook,,0,0,0,,{{\\an8\\pos(540,{hy}){sc}\\fad(0,150)}}{hook[0]}")
     ev.append(f"Dialogue: 3,{fmt(0.2)},{fmt(hook_end)},HookG,,0,0,0,,{{\\an8\\pos(540,{hy+int((130*nl+20)*hs/100)}){sc}\\fad(120,150)}}{hook[1]}")
-    q0=TOT-3.4
+    q0=SPEECH_END+0.05
     ql=q[0].count(chr(92)+'N')+1; QH=110*ql+20+90
     qy=160 if LA['face_top']-30-160>=QH else int(min(LA['chin']-10,1545-QH))
     ev.append(f"Dialogue: 3,{fmt(q0)},{fmt(TOT)},Q,,0,0,0,,{{\\an8\\pos(540,{qy})\\fad(150,0)}}{q[0]}")
@@ -92,7 +95,7 @@ def build(name,segs,fixes,keys,hook,q,chips,cards,cover_ms=None,gamma=1.0):
     if qy==160: ev.append(f"Dialogue: 3,{fmt(TOT-2.6)},{fmt(TOT)},Sig,,0,0,0,,{{\\fad(200,0)}}@carlosveiolima")
     for txt,a,b in chips:
         ev.append(f"Dialogue: 2,{fmt(T(a))},{fmt(T(b))},Lb,,0,0,0,,{{\\fad(150,150)}}{txt}")
-    win=[(T(a),min(T(b),T(a)+3.6)) for (png,a,b,_s,_y,_w) in cards if not png.endswith('.jpg')]+[(TOT-3.4,TOT+1)]
+    win=[(T(a),min(T(b),T(a)+3.6)) for (png,a,b,_s,_y,_w) in cards if not png.endswith('.jpg')]
     def _t(x):
         h,m_,s_=x.split(':'); return int(h)*3600+int(m_)*60+float(s_)
     keep=[]
@@ -101,6 +104,8 @@ def build(name,segs,fixes,keys,hook,q,chips,cards,cover_ms=None,gamma=1.0):
         if pp[3]=='Cap':
             a_,b_=_t(pp[1]),_t(pp[2])
             if any(a_<wb and b_>wa for wa,wb in win): continue
+            if a_>=q0: continue
+            if b_>q0: pp[2]=fmt(q0); e=','.join(pp)
         keep.append(e)
     ev=keep
     ass=open(f"{W}/head.ass").read()+"\n".join(ev)+"\n"
