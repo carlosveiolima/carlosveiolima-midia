@@ -27,7 +27,7 @@ FPS_A = 4                  # quadros analisados por segundo
 # ---- limites (canon) ------------------------------------------------------
 SAFE = dict(x0=60, x1=1020, y0=150, y1=1560)        # área segura IG/TT/Shorts
 RAIL = dict(x0=930, y0=860, y1=1560)                # botões laterais do TikTok/IG
-FACE_PAD_TOP, FACE_PAD_BOT, FACE_PAD_X = 0.25, 0.35, 0.12   # zona protegida do rosto
+FACE_PAD_TOP, FACE_PAD_BOT, FACE_PAD_X = 0.25, 0.24, 0.12   # 0.24 abaixo cobre queixo e barba; pescoço pode ter legenda   # zona protegida do rosto
 FACE_OVERLAP_FAIL = 0.04   # >4% da zona do rosto coberta por texto = falha
 FULLBLEED = 0.55           # >55% da tela coberta = card de tela cheia (B-roll), permitido
 LUFS = (-15.0, -13.0); TP_MAX = -1.0
