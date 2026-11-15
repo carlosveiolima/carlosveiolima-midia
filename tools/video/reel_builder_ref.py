@@ -1,5 +1,5 @@
 import json,subprocess,os,sys,numpy as np
-sys.path.insert(0,'/tmp/claude-0/-home-claude/8b78c0ee-8be5-5b5a-b18f-32b954b96fad/scratchpad/vqc')
+sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import layout
 W=os.path.dirname(os.path.abspath(__file__))
 SRC={"34":"/mnt/user-data/uploads/139234.mp4","36":"/mnt/user-data/uploads/139236.mp4"}
