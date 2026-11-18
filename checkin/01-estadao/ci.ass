@@ -1,0 +1,30 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,78,&H00FFFFFF,&H00FFFFFF,&H00101010,&H90000000,0,0,0,0,100,100,1,0,1,7,3,2,80,80,560,1
+Style: Hook,Inter ExtraBold,94,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,0,0,3,24,0,8,70,70,170,1
+Style: HookG,Inter ExtraBold,94,&H001A2514,&H00FFFFFF,&H0070BAE2,&H0070BAE2,0,0,0,0,100,100,0,0,3,24,0,8,70,70,300,1
+Style: Lb,Inter ExtraBold,48,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,1,0,3,16,0,7,60,60,170,1
+Style: Q,Inter ExtraBold,78,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,0,0,3,24,0,8,70,70,190,1
+Style: QG,Inter ExtraBold,60,&H001A2514,&H00FFFFFF,&H0070BAE2,&H0070BAE2,0,0,0,0,100,100,0,0,3,18,0,8,70,70,420,1
+Style: Sig,Inter Display,52,&H00FFFFFF,&H00FFFFFF,&H00101010,&H80000000,0,0,0,0,100,100,0,0,1,4,1,2,80,80,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 3,0:00:00.00,0:00:03.25,Lb,,0,0,0,,{\an8\pos(540,170)\fad(0,150)}CAÇA CHECK-IN #1
+Dialogue: 3,0:00:00.00,0:00:03.25,Hook,,0,0,0,,{\an8\pos(540,1356)\fs54\fad(0,150)}LANCHONETE DE 1968\NCOM CERVEJA PRÓPRIA
+Dialogue: 3,0:00:03.40,0:00:07.05,Hook,,0,0,0,,{\an8\pos(540,170)\fs80\fad(150,150)}ESTADÃO\NAMERICAN LAGER
+Dialogue: 3,0:00:03.80,0:00:07.05,QG,,0,0,0,,{\an8\pos(540,420)\fad(150,150)}5% · IBU 8 · 355 ML
+Dialogue: 3,0:00:07.20,0:00:10.25,Hook,,0,0,0,,{\an8\pos(540,170)\fs80\fad(150,150)}BAR E LANCHES\NESTADÃO
+Dialogue: 3,0:00:07.60,0:00:10.25,QG,,0,0,0,,{\an8\pos(540,420)\fad(150,150)}ABERTO 24H, DESDE 1968
+Dialogue: 3,0:00:10.40,0:00:12.85,Hook,,0,0,0,,{\an8\pos(540,170)\fs80\fad(150,150)}FAMOSO PELO PERNIL
+Dialogue: 3,0:00:10.80,0:00:12.85,QG,,0,0,0,,{\an8\pos(540,320)\fad(150,150)}E TEM CERVEJA DA CASA
+Dialogue: 3,0:00:13.00,0:00:15.45,Hook,,0,0,0,,{\an8\pos(540,170)\fs80\fad(150,150)}ELABORADA PELA\NLANGERWISCH
+Dialogue: 3,0:00:13.40,0:00:15.45,QG,,0,0,0,,{\an8\pos(540,420)\fad(150,150)}FEITA EM SERRA NEGRA (SP)
+Dialogue: 3,0:00:15.60,0:00:19.30,Q,,0,0,0,,{\an8\pos(540,1350)\fs66\fad(150,0)}ONDE EU CAÇO A PRÓXIMA?
+Dialogue: 3,0:00:16.00,0:00:19.30,QG,,0,0,0,,{\an8\pos(540,1468)\fs54\fad(150,0)}COMENTA MERCADO
