@@ -1,0 +1,62 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,78,&H00FFFFFF,&H00FFFFFF,&H00101010,&H90000000,0,0,0,0,100,100,1,0,1,7,3,2,80,80,560,1
+Style: Hook,Inter ExtraBold,94,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,0,0,3,24,0,8,70,70,170,1
+Style: HookG,Inter ExtraBold,94,&H001A2514,&H00FFFFFF,&H0070BAE2,&H0070BAE2,0,0,0,0,100,100,0,0,3,24,0,8,70,70,300,1
+Style: Lb,Inter ExtraBold,48,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,1,0,3,16,0,7,60,60,170,1
+Style: Q,Inter ExtraBold,78,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,0,0,3,24,0,8,70,70,190,1
+Style: QG,Inter ExtraBold,60,&H001A2514,&H00FFFFFF,&H0070BAE2,&H0070BAE2,0,0,0,0,100,100,0,0,3,18,0,8,70,70,420,1
+Style: Sig,Inter Display,52,&H00FFFFFF,&H00FFFFFF,&H00101010,&H80000000,0,0,0,0,100,100,0,0,1,4,1,2,80,80,400,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 3,0:00:00.00,0:00:03.25,Lb,,0,0,0,,{\an8\pos(540,170)\fad(0,150)}CAÇA CHECK-IN #1
+Dialogue: 3,0:00:00.00,0:00:03.25,Hook,,0,0,0,,{\an8\pos(540,1356)\fs54\fad(0,150)}LANCHONETE DE 1968\NCOM CERVEJA PRÓPRIA
+Dialogue: 3,0:00:04.85,0:00:08.00,Hook,,0,0,0,,{\an8\pos(540,170)\fs80\fad(150,150)}BAR E LANCHES\NESTADÃO
+Dialogue: 3,0:00:05.25,0:00:08.00,QG,,0,0,0,,{\an8\pos(540,420)\fad(150,150)}CENTRO DE SÃO PAULO
+Dialogue: 3,0:00:08.15,0:00:10.10,Hook,,0,0,0,,{\an8\pos(540,170)\fs80\fad(150,150)}ESTADÃO\NAMERICAN LAGER
+Dialogue: 3,0:00:08.40,0:00:10.10,QG,,0,0,0,,{\an8\pos(540,420)\fad(150,150)}5% · IBU 8 · 355 ML
+Dialogue: 3,0:00:10.25,0:00:13.50,Hook,,0,0,0,,{\an8\pos(540,170)\fs80\fad(150,150)}ELABORADA PELA\NLANGERWISCH
+Dialogue: 3,0:00:10.65,0:00:13.50,QG,,0,0,0,,{\an8\pos(540,420)\fad(150,150)}FEITA EM SERRA NEGRA (SP)
+Dialogue: 3,0:00:14.90,0:00:20.17,Q,,0,0,0,,{\an8\pos(540,1350)\fs66\fad(150,0)}ONDE MAIS EU PRECISO IR?
+Dialogue: 3,0:00:15.60,0:00:20.17,QG,,0,0,0,,{\an8\pos(540,1468)\fs54\fad(150,0)}COMENTA MERCADO
+Dialogue: 1,0:00:03.76,0:00:04.72,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DISPONÍVEL.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:04.72,0:00:05.36,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} PRA MINHA
+Dialogue: 1,0:00:05.36,0:00:05.60,Cap,,0,0,0,,{\an5\pos(540,1470)}E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} MINHA
+Dialogue: 1,0:00:05.60,0:00:05.76,Cap,,0,0,0,,{\an5\pos(540,1470)}E PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}MINHA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:05.76,0:00:06.08,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SURPRESA{\c&HFFFFFF&\fscx100\fscy100} AQUI ESTADÃO
+Dialogue: 1,0:00:06.08,0:00:06.48,Cap,,0,0,0,,{\an5\pos(540,1470)}SURPRESA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AQUI{\c&HFFFFFF&\fscx100\fscy100} ESTADÃO
+Dialogue: 1,0:00:06.48,0:00:06.96,Cap,,0,0,0,,{\an5\pos(540,1470)}SURPRESA AQUI {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}ESTADÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:06.96,0:00:07.52,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}LANCHONETE{\c&HFFFFFF&\fscx100\fscy100} AQUI EM
+Dialogue: 1,0:00:07.52,0:00:07.60,Cap,,0,0,0,,{\an5\pos(540,1470)}LANCHONETE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AQUI{\c&HFFFFFF&\fscx100\fscy100} EM
+Dialogue: 1,0:00:07.60,0:00:07.68,Cap,,0,0,0,,{\an5\pos(540,1470)}LANCHONETE AQUI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}EM{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:07.68,0:00:07.84,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SÃO{\c&HFFFFFF&\fscx100\fscy100} PAULO QUE FUNCIONA
+Dialogue: 1,0:00:07.84,0:00:08.08,Cap,,0,0,0,,{\an5\pos(540,1470)}SÃO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PAULO{\c&HFFFFFF&\fscx100\fscy100} QUE FUNCIONA
+Dialogue: 1,0:00:08.08,0:00:08.24,Cap,,0,0,0,,{\an5\pos(540,1470)}SÃO PAULO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} FUNCIONA
+Dialogue: 1,0:00:08.24,0:00:08.56,Cap,,0,0,0,,{\an5\pos(540,1470)}SÃO PAULO QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FUNCIONA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:08.56,0:00:08.72,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUASE{\c&HFFFFFF&\fscx100\fscy100} 24 HORAS
+Dialogue: 1,0:00:08.72,0:00:09.12,Cap,,0,0,0,,{\an5\pos(540,1470)}QUASE {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}24{\c&HFFFFFF&\fscx100\fscy100} HORAS
+Dialogue: 1,0:00:09.12,0:00:09.44,Cap,,0,0,0,,{\an5\pos(540,1470)}QUASE 24 {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}HORAS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:09.44,0:00:09.60,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TÁ{\c&HFFFFFF&\fscx100\fscy100} COM A SUA.
+Dialogue: 1,0:00:09.60,0:00:09.68,Cap,,0,0,0,,{\an5\pos(540,1470)}TÁ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}COM{\c&HFFFFFF&\fscx100\fscy100} A SUA.
+Dialogue: 1,0:00:09.68,0:00:09.76,Cap,,0,0,0,,{\an5\pos(540,1470)}TÁ COM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} SUA.
+Dialogue: 1,0:00:09.76,0:00:10.24,Cap,,0,0,0,,{\an5\pos(540,1470)}TÁ COM A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SUA.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:10.24,0:00:10.72,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FABRICADA{\c&HFFFFFF&\fscx100\fscy100} PELA
+Dialogue: 1,0:00:10.72,0:00:10.88,Cap,,0,0,0,,{\an5\pos(540,1470)}FABRICADA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PELA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:10.88,0:00:11.60,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}LANGERWISCH{\c&HFFFFFF&\fscx100\fscy100} QUE
+Dialogue: 1,0:00:11.60,0:00:11.76,Cap,,0,0,0,,{\an5\pos(540,1470)}LANGERWISCH {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:11.76,0:00:12.00,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}INCLUSIVE{\c&HFFFFFF&\fscx100\fscy100} FAZ CERVEJA
+Dialogue: 1,0:00:12.00,0:00:12.16,Cap,,0,0,0,,{\an5\pos(540,1470)}INCLUSIVE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FAZ{\c&HFFFFFF&\fscx100\fscy100} CERVEJA
+Dialogue: 1,0:00:12.16,0:00:12.56,Cap,,0,0,0,,{\an5\pos(540,1470)}INCLUSIVE FAZ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CERVEJA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:12.56,0:00:12.72,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} VÁRIOS LUGARES.
+Dialogue: 1,0:00:12.72,0:00:12.96,Cap,,0,0,0,,{\an5\pos(540,1470)}PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VÁRIOS{\c&HFFFFFF&\fscx100\fscy100} LUGARES.
+Dialogue: 1,0:00:12.96,0:00:13.68,Cap,,0,0,0,,{\an5\pos(540,1470)}PRA VÁRIOS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}LUGARES.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:13.68,0:00:14.00,Cap,,0,0,0,,{\an5\pos(540,1470)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FOI{\c&HFFFFFF&\fscx100\fscy100} O PRIMEIRO.
+Dialogue: 1,0:00:14.00,0:00:14.08,Cap,,0,0,0,,{\an5\pos(540,1470)}FOI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}O{\c&HFFFFFF&\fscx100\fscy100} PRIMEIRO.
+Dialogue: 1,0:00:14.08,0:00:14.85,Cap,,0,0,0,,{\an5\pos(540,1470)}FOI O {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}PRIMEIRO.{\c&HFFFFFF&\fscx100\fscy100}
