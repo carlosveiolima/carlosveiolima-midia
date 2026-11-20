@@ -32,13 +32,15 @@ def env(k, a, b):
     e = np.convolve(seg, np.ones(win) / win, 'same')
     return a + (int(np.argmin(e)) / 16000)
 segs = []
-for k, i0, i1 in C['segs']:
-    w = W[k]
+for sg in C['segs']:
+    k, i0, i1 = sg[:3]; w = W[k]
     prev_end = w[i0 - 1][2] if i0 > 0 else max(0, w[i0][1] - 0.3)
     nxt = w[i1 + 1][1] if i1 + 1 < len(w) else w[i1][2] + 0.4
     s = env(k, max(prev_end, w[i0][1] - 0.45), w[i0][1] - 0.02) if w[i0][1] - prev_end > 0.06 else (prev_end + w[i0][1]) / 2
     e = env(k, w[i1][2] + 0.02, min(nxt, w[i1][2] + 0.45)) if nxt - w[i1][2] > 0.06 else (w[i1][2] + nxt) / 2
     e = min(e, w[i1][2] + 0.35)
+    if len(sg) > 3 and sg[3] is not None: s = sg[3]
+    if len(sg) > 4 and sg[4] is not None: e = sg[4]
     segs.append((k, i0, i1, max(0, s), e))
 curve, gam = C.get('curve', '0/0 0.2/0.27 0.5/0.6 0.85/0.9 1/1'), C.get('gamma', 1.0)
 VF = f"scale=1080:1920,hqdn3d=2:1.5:4:3,curves=all='{curve}',eq=gamma={gam}:contrast=1.05:saturation=1.06,colorbalance=rs=0.0:bs=0.0,unsharp=5:5:0.6"
