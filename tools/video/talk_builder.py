@@ -138,6 +138,6 @@ for j, a in enumerate(SFX):
 fc.append(f"[0:v]ass={O}/legendas.ass[v]")
 fc.append(f"{''.join(mix)}amix=inputs={len(mix)}:duration=first:normalize=0,loudnorm=I=-14:TP=-2:LRA=9,alimiter=limit=0.84:level=false[a]")
 run(inputs + ['-filter_complex', ';'.join(fc), '-map', '[v]', '-map', '[a]',
-     '-c:v', 'libx264', '-preset', 'medium', '-crf', '19', '-maxrate', '8M', '-bufsize', '16M', '-pix_fmt', 'yuv420p', '-r', '30', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000',
+     '-c:v', 'libx264', '-preset', 'medium', '-crf', '19', '-maxrate', '6M', '-bufsize', '12M', '-pix_fmt', 'yuv420p', '-r', '30', '-c:a', 'aac', '-b:a', '192k', '-ar', '48000',
      '-movflags', '+faststart', f'{O}/final.mp4'])
 print('TOT', round(TOT, 2), 'segs', len(segs), 'top_ok', top_ok, 'low_y', low_y)
