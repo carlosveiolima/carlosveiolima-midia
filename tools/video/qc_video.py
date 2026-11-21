@@ -180,6 +180,13 @@ def main():
             for c in range(1, k):   # só blocos grandes (cards); boca/mão em movimento são pequenos
                 if st[c, cv2.CC_STAT_AREA] >= 2500: keep |= lab_ == c
             masks[i] = keep
+    gmask = not A.base and not A.ass
+    if gmask:
+        # vídeo gráfico (fundo liso, sem --ass/--base): tudo que difere do fundo é texto/gráfico.
+        # Sem isso a checagem de área segura ficava cega (ex.: barra de R$ 3.200 do Índice, 16/11).
+        for i, f in enumerate(fin):
+            d = np.abs(f.astype(np.int16) - f[2, 2].astype(np.int16)).max(2) > 45
+            if (~d).mean() > 0.5: masks[i] = d
     if A.ass:
         am = render_ass(A.ass, p['dur'])[:n]
         for i, m in enumerate(am): masks[i] |= m
@@ -244,7 +251,7 @@ def main():
             if rm.mean() > 0.02: rail_hits.append(t[i])
         if A.ass and (cm[i] & om[i]).sum() > 400: coll.append(t[i]); bad.setdefault(i, 'legenda batendo em outro texto')
         if not full:
-            lab = cv2.cvtColor(fin[i], cv2.COLOR_BGR2LAB); L = lab[..., 0][~m]
+            lab = cv2.cvtColor(fin[i], cv2.COLOR_BGR2LAB); L = lab[..., 0].ravel() if gmask else lab[..., 0][~m]
             if L.size:
                 contr.append(L.std()); hi.append((L >= 250).mean()); lo.append((L <= 6).mean())
             if z is not None:
