@@ -18,10 +18,10 @@ spec.json:
   "fechamento": ["Comenta MERCADO", "que te mando a", "newsletter no direct"],   # CTA do Instagram (linhas curtas)
   "fechamento_tiktok": ["As notas de cada uma", "no Substack,", "link na bio"],   # opcional
   "formato": "A",   # A (padrão): capa + 1 a 8 + card final com 9ª, 10ª e CTA
-                    # B (teste nov/26): capa + 1 a 5 + lista 6 a 10 + frase + decepção + CTA
+                    # B (teste nov/26): capa + 1 a 5 + lista 6 a 10 + números da semana + frase + CTA
   "frase": "Frase controversa da semana com *uma* palavra em dourado",   # só formato B
-  "decepcao": {"cerveja": "...", "cervejaria": "...", "estilo": "Imperial Stout · 13%",
-               "nota": "3,5", "nota_global": "3,92", "slug": "...", "texto": "linha curta opcional"}  # só formato B
+  "numeros": [["31", "check-ins"], ["8", "cervejarias"], ["9", "cervejas de 12% ou mais"]],  # só formato B
+  # NUNCA publicar as piores notas da semana: reservado para o produto pago de Carlos.
 }
 
 Sempre 10 slides: o Metricool só publica 10 imagens por carrossel (o resto some sem aviso).
@@ -356,7 +356,7 @@ def card_duplo(itens, cta, out):
     im.save(out)
 
 
-# ---------- formato B (teste nov/26): lista 6 a 10, frase, decepção ----------
+# ---------- formato B (teste nov/26): lista 6 a 10, números, frase ----------
 def _cores(escuro):
     return (GREEN, CREAM, MUTED_DARK) if escuro else (CREAM, GREEN, MUTED_LIGHT)
 
@@ -437,44 +437,23 @@ def card_frase(frase, escuro, out, olho="A frase da semana"):
     im.save(out)
 
 
-def card_decepcao(c, escuro, out):
+def card_numeros(itens, escuro, out, olho="A semana em números"):
+    """itens: lista de até 4 pares [valor, rótulo], ex.: ["31", "check-ins"]."""
     bg, fg, mu = _cores(escuro)
     im = Image.new("RGB", (W, H), bg)
     d = ImageDraw.Draw(im)
     n = os.path.basename(out)
-    y = _olho(d, "A decepção da semana", n) + 20
-    cf = font("Archivo.ttf", SZ_CERVEJARIA, 700, 100)
-    sf = font("ArchivoItalic.ttf", SZ_ESTILO, 500, 100)
-    for sz in range(84, 40, -3):
-        bf = font("Archivo.ttf", sz, 800, 100)
-        ls = wrap(d, c["cerveja"], bf, CW)
-        if len(ls) <= 3:
-            break
-    for l in ls:
-        texto(d, (CX0, y), l, bf, fg, n)
-        y += lh(bf, 1.06)
-    y += 20
-    texto(d, (CX0, y), c["cervejaria"], cf, GOLD, n)
-    y += lh(cf, 1.05) + 8
-    texto(d, (CX0, y), c["estilo"], sf, mu, n)
-    y += lh(sf, 1.1) + 110
-    lb = font("Archivo.ttf", SZ_LABEL, 700, 100)
-    nf = font("Playfair.ttf", 200, 700)
-    meio = W // 2
-    texto(d, (CX0, y), "UNTAPPD", lb, mu, n)
-    texto(d, (meio + 20, y), "EU", lb, mu, n)
-    y += 50
-    texto(d, (CX0, y), str(c["nota_global"]).replace(".", ","), nf, mu, n)
-    texto(d, (meio + 20, y), str(c["nota"]).replace(".", ","), nf, GOLD, n)
-    y += lh(nf, 0.95) + 70
-    if c.get("texto"):
-        tf = font("Playfair.ttf", SZ_APOIO, 400)
-        for l in wrap(d, c["texto"], tf, CW):
-            if y + lh(tf, 1.2) > H - 130:
-                _violacoes.append(f"{n}: texto da decepção não cabe")
-                break
-            texto(d, (CX0, y), l, tf, fg, n)
-            y += lh(tf, 1.2)
+    y = _olho(d, olho, n) + 40
+    vf = font("Playfair.ttf", 150, 700)
+    lf = font("Archivo.ttf", 44, 700, 100)
+    passo = (H - 160 - y) // max(1, len(itens[:4]))
+    for valor, rotulo in itens[:4]:
+        texto(d, (CX0, y), str(valor), vf, GOLD, n)
+        yy = y + lh(vf, 0.9) + 24
+        for l in wrap(d, rotulo, lf, CW):
+            texto(d, (CX0, yy), l, lf, fg, n)
+            yy += lh(lf, 1.05)
+        y += passo
     _rodape(d, mu, n)
     im.save(out)
 
@@ -504,9 +483,9 @@ def main():
     cta = spec.get("fechamento", ["As notas e o comentário", "de cada uma no Substack"])
     cta_tt = spec.get("fechamento_tiktok", ["As notas de cada uma", "no Substack,", "link na bio"])
     if formato == "B":
-        # capa, 1 a 5 (um por card), lista 6 a 10, frase, decepção, CTA = 10 slides
-        if not (tem_capa and len(cervs) == 10 and spec.get("frase") and spec.get("decepcao")):
-            sys.exit("formato B precisa de capa, 10 cervejas, 'frase' e 'decepcao' no spec")
+        # capa, 1 a 5 (um por card), lista 6 a 10, números, frase, CTA = 10 slides
+        if not (tem_capa and len(cervs) == 10 and spec.get("frase") and spec.get("numeros")):
+            sys.exit("formato B precisa de capa, 10 cervejas, 'frase' e 'numeros' no spec")
         for i, c in enumerate(cervs[:5]):
             slug = re.sub(r"[^\w-]", "_", c.get("slug") or f"{c['cervejaria']}_{c['cerveja']}")[:48]
             out = os.path.join(pasta, f"slide_{n0 + i:02d}_pos{c['pos']:02d}_{slug}.png")
@@ -514,11 +493,10 @@ def main():
             arquivos.append(out)
         out = os.path.join(pasta, "slide_07_pos06-10_lista.png")
         card_lista(cervs[5:], False, out); arquivos.append(out)
-        out = os.path.join(pasta, "slide_08_frase.png")
-        card_frase(spec["frase"], True, out); arquivos.append(out)
-        dslug = re.sub(r"[^\w-]", "_", spec["decepcao"].get("slug") or spec["decepcao"]["cerveja"])[:40]
-        out = os.path.join(pasta, f"slide_09_decepcao_{dslug}.png")
-        card_decepcao(spec["decepcao"], False, out); arquivos.append(out)
+        out = os.path.join(pasta, "slide_08_numeros.png")
+        card_numeros(spec["numeros"], True, out); arquivos.append(out)
+        out = os.path.join(pasta, "slide_09_frase.png")
+        card_frase(spec["frase"], False, out); arquivos.append(out)
         fim = os.path.join(pasta, "slide_10_fim.png")
         fechamento(cta, fim)
         fim_tt = os.path.join(pasta, "slide_10_fim_tiktok.png")

@@ -9,6 +9,6 @@ python3 tools/as10/scripts/gerar_carrossel.py spec.json
 
 - Sempre 10 slides (limite do Metricool).
 - Formato A: capa, posições 1 a 8, card final com 9ª, 10ª e CTA.
-- Formato B: capa, posições 1 a 5, lista 6 a 10, frase da semana, decepção da semana, CTA.
-- `ranking.json` traz `decepcao`: a cerveja fora do top com maior distância entre a nota global e a de Carlos.
+- Formato B: capa, posições 1 a 5, lista 6 a 10, a semana em números, frase da semana, CTA.
+- Nunca publicar as piores notas da semana: reservado para o produto pago.
 - Fontes em `assets/fonts` (licença OFL).

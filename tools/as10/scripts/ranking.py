@@ -182,25 +182,8 @@ def main():
         if len(empatados):
             corte = [f"{r['beer_name']} ({r['brewery_name']}) {r['rating_score']}" for _, r in empatados.iterrows()]
 
-    # decepção da semana (formato B): fora do top, maior distância entre a nota global e a de Carlos
-    decepcao = None
-    resto = rated.iloc[a.top:].copy()
-    resto = resto[resto[gw].notna()]
-    if len(resto):
-        resto["_gap"] = resto[gw].astype(float) - resto["rating_score"].astype(float)
-        resto = resto[resto["_gap"] > 0].sort_values(["_gap", gw], ascending=[False, False])
-        if len(resto):
-            r = resto.iloc[0]
-            abv_txt, aviso = fmt_abv(r.get("beer_abv"), r.get("beer_type"))
-            est = estilo_curto(r.get("beer_type"))
-            decepcao = {"cerveja": r["beer_name"], "cervejaria": r["brewery_name"],
-                        "estilo": f"{est} · {abv_txt}" if abv_txt else est, "abv_aviso": aviso,
-                        "nota": fmt_nota(r["rating_score"]), "nota_global": fmt_nota(round(float(r[gw]), 2)),
-                        "brewery_url": r.get("brewery_url"),
-                        "slug": f"{slug(str(r['brewery_name']), 18)}_{slug(str(r['beer_name']), 24)}"}
-
     out = {"janela": [a.inicio, a.fim], "stats": stats, "duplicatas_removidas": dups,
-           "excluidos": excl, "empatados_fora_do_top": corte, "top": top, "decepcao": decepcao}
+           "excluidos": excl, "empatados_fora_do_top": corte, "top": top}
     with open(a.saida, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2, default=str)
 
@@ -210,8 +193,6 @@ def main():
         print("  FORA:", e)
     if corte:
         print("  EMPATE NA FRONTEIRA (fora do top):", corte)
-    if decepcao:
-        print("  DECEPÇÃO (formato B):", decepcao["cerveja"], "|", decepcao["cervejaria"], "| sua", decepcao["nota"], "x global", decepcao["nota_global"])
     for t in top:
         print(f"{t['pos']:2d}. {t['nota']} | {t['cerveja']} | {t['cervejaria']} | {t['estilo']} | "
               f"{t['pais_export']}/{t['cidade_export']}/{t['estado_export']}" + (f" | {t['abv_aviso']}" if t['abv_aviso'] else ""))
