@@ -22,7 +22,7 @@ CASC = os.path.join(HERE, 'haarcascade_frontalface_default.xml')
 if not os.path.exists(CASC): CASC = os.path.join(cv2.data.haarcascades, 'haarcascade_frontalface_default.xml')
 W, H = 1080, 1920
 S = 2                      # fator de redução para análise (540x960)
-FPS_A = 4                  # quadros analisados por segundo
+FPS_A = int(os.environ.get("QC_FPS", "4"))  # quadros analisados por segundo (QC_FPS=2 ou 3 em vídeo longo, para caber na memória)
 
 # ---- limites (canon) ------------------------------------------------------
 SAFE = dict(x0=60, x1=1020, y0=150, y1=1560)        # área segura IG/TT/Shorts

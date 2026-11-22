@@ -1,0 +1,367 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Inter ExtraBold,78,&H00FFFFFF,&H00FFFFFF,&H00101010,&H90000000,0,0,0,0,100,100,1,0,1,7,3,2,80,80,560,1
+Style: Hook,Inter ExtraBold,94,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,0,0,3,24,0,8,70,70,170,1
+Style: HookG,Inter ExtraBold,94,&H001A2514,&H00FFFFFF,&H0070BAE2,&H0070BAE2,0,0,0,0,100,100,0,0,3,24,0,8,70,70,300,1
+Style: Lb,Inter ExtraBold,48,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,1,0,3,16,0,7,60,60,170,1
+Style: Q,Inter ExtraBold,78,&H00E4F0F5,&H00FFFFFF,&H001A2514,&H001A2514,0,0,0,0,100,100,0,0,3,24,0,8,70,70,190,1
+Style: QG,Inter ExtraBold,60,&H001A2514,&H00FFFFFF,&H0070BAE2,&H0070BAE2,0,0,0,0,100,100,0,0,3,18,0,8,70,70,420,1
+Style: Sig,Inter Display,52,&H00FFFFFF,&H00FFFFFF,&H00101010,&H80000000,0,0,0,0,100,100,0,0,1,4,1,2,80,80,400,1
+Style: Bad,Inter ExtraBold,94,&H00FFFFFF,&H00FFFFFF,&H002A2AB8,&H002A2AB8,0,0,0,0,100,100,0,0,3,24,0,8,70,70,170,1
+Style: Good,Inter ExtraBold,94,&H00FFFFFF,&H00FFFFFF,&H00347A1E,&H00347A1E,0,0,0,0,100,100,0,0,3,24,0,8,70,70,170,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 3,0:00:00.00,0:00:03.30,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs60\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}8 PERGUNTAS ANTES DE\NLANÇAR UMA CERVEJA
+Dialogue: 3,0:00:00.22,0:00:03.30,QG,,0,0,0,,{\an8\move(440,165,540,165,0,220)\fs50\fad(120,140)}POR DENTRO DA BIRRA MORETTI
+Dialogue: 3,0:00:30.87,0:00:33.87,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}1. TEM ESPAÇO PRA MARCA?
+Dialogue: 3,0:00:36.54,0:00:39.54,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}2. QUE OCASIÃO ELA OCUPA?
+Dialogue: 3,0:00:44.39,0:00:47.39,Bad,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}3. COMPLEMENTA OU\NCANIBALIZA?
+Dialogue: 3,0:00:49.55,0:00:52.55,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}4. QUEM VAI BEBER?
+Dialogue: 3,0:00:49.77,0:00:52.55,QG,,0,0,0,,{\an8\move(440,1423,540,1423,0,220)\fs48\fad(120,140)}QUEM JÁ TOMA HEINEKEN?
+Dialogue: 3,0:01:02.86,0:01:05.86,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}5. PRODUZIR, IMPORTAR\NOU NÃO LANÇAR?
+Dialogue: 3,0:01:13.80,0:01:16.80,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}6. TEM FÁBRICA? A\NRECEITA FICA IGUAL?
+Dialogue: 3,0:01:24.85,0:01:27.85,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}7. ONDE? COMO?
+Dialogue: 3,0:01:25.07,0:01:27.85,QG,,0,0,0,,{\an8\move(440,1423,540,1423,0,220)\fs48\fad(120,140)}QUE MARKETING?
+Dialogue: 3,0:01:29.82,0:01:32.82,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}8. MINILOTE E TESTE
+Dialogue: 3,0:01:30.04,0:01:32.82,QG,,0,0,0,,{\an8\move(440,1423,540,1423,0,220)\fs48\fad(120,140)}RODADAS DE AVALIAÇÃO
+Dialogue: 3,0:01:42.75,0:01:46.15,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}QUEM LIDERA O PREMIUM?
+Dialogue: 3,0:01:42.97,0:01:46.15,QG,,0,0,0,,{\an8\move(440,1423,540,1423,0,220)\fs48\fad(120,140)}AS DUAS DIZEM QUE SÃO ELAS
+Dialogue: 3,0:02:00.99,0:02:03.79,Good,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}PRAYA (BETTER DRINKS)
+Dialogue: 3,0:02:01.21,0:02:03.79,QG,,0,0,0,,{\an8\move(440,1423,540,1423,0,220)\fs48\fad(120,140)}CONTRA A CORONA
+Dialogue: 3,0:02:07.49,0:02:10.09,Good,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}BIRRA MORETTI
+Dialogue: 3,0:02:07.71,0:02:10.09,QG,,0,0,0,,{\an8\move(440,1423,540,1423,0,220)\fs48\fad(120,140)}CONTRA A STELLA
+Dialogue: 3,0:02:12.84,0:02:15.64,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}ESTREIA EM DEZEMBRO
+Dialogue: 3,0:02:13.06,0:02:15.64,QG,,0,0,0,,{\an8\move(440,1423,540,1423,0,220)\fs48\fad(120,140)}CANTINAS E PIZZARIAS
+Dialogue: 3,0:02:18.54,0:02:21.34,Hook,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}A RESPOSTA DA AMBEV
+Dialogue: 3,0:02:18.76,0:02:21.34,QG,,0,0,0,,{\an8\move(440,1423,540,1423,0,220)\fs48\fad(120,140)}BARES, TAÇAS, TREINAMENTO
+Dialogue: 3,0:02:55.12,0:02:59.52,Q,,0,0,0,,{\an8\move(640,1290,540,1290,0,220)\fs62\fad(120,140)\t(0,140,\fscx108\fscy108)\t(140,260,\fscx100\fscy100)}QUAL DAS 8 PERGUNTAS\NÉ A MAIS DIFÍCIL?
+Dialogue: 3,0:02:55.34,0:02:59.52,QG,,0,0,0,,{\an8\move(440,165,540,165,0,220)\fs50\fad(120,140)}COMENTA PRAYA
+Dialogue: 1,0:00:03.35,0:00:03.53,Cap,,0,0,0,,{\an5\pos(540,1315)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AGORA{\c&HFFFFFF&\fscx100\fscy100} A BIRRA MORETTI
+Dialogue: 1,0:00:03.53,0:00:03.69,Cap,,0,0,0,,{\an5\pos(540,1315)}AGORA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} BIRRA MORETTI
+Dialogue: 1,0:00:03.69,0:00:04.65,Cap,,0,0,0,,{\an5\pos(540,1315)}AGORA A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}BIRRA MORETTI{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:04.65,0:00:05.05,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AGORA{\c&HFFFFFF&\fscx100\fscy100} AQUI NO
+Dialogue: 1,0:00:05.05,0:00:05.29,Cap,,0,0,0,,{\an5\pos(540,1300)}AGORA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AQUI{\c&HFFFFFF&\fscx100\fscy100} NO
+Dialogue: 1,0:00:05.29,0:00:05.45,Cap,,0,0,0,,{\an5\pos(540,1300)}AGORA AQUI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:05.45,0:00:06.27,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}BRASIL.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:06.27,0:00:06.43,Cap,,0,0,0,,{\an5\pos(540,1312)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}EU{\c&HFFFFFF&\fscx100\fscy100} FICO IMAGINANDO
+Dialogue: 1,0:00:06.43,0:00:06.75,Cap,,0,0,0,,{\an5\pos(540,1312)}EU {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FICO{\c&HFFFFFF&\fscx100\fscy100} IMAGINANDO
+Dialogue: 1,0:00:06.75,0:00:07.39,Cap,,0,0,0,,{\an5\pos(540,1312)}EU FICO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}IMAGINANDO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:07.39,0:00:07.63,Cap,,0,0,0,,{\an5\pos(540,1312)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ASSIM{\c&HFFFFFF&\fscx100\fscy100} O QUÃO
+Dialogue: 1,0:00:07.63,0:00:07.79,Cap,,0,0,0,,{\an5\pos(540,1312)}ASSIM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}O{\c&HFFFFFF&\fscx100\fscy100} QUÃO
+Dialogue: 1,0:00:07.79,0:00:08.43,Cap,,0,0,0,,{\an5\pos(540,1312)}ASSIM O {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:08.43,0:00:09.23,Cap,,0,0,0,,{\an5\pos(540,1324)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DIFÍCIL{\c&HFFFFFF&\fscx100\fscy100} NÉ?
+Dialogue: 1,0:00:09.23,0:00:09.79,Cap,,0,0,0,,{\an5\pos(540,1324)}DIFÍCIL {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÉ?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:09.79,0:00:10.11,Cap,,0,0,0,,{\an5\pos(540,1342)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TODAS{\c&HFFFFFF&\fscx100\fscy100} AS ETAPAS
+Dialogue: 1,0:00:10.11,0:00:10.19,Cap,,0,0,0,,{\an5\pos(540,1342)}TODAS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AS{\c&HFFFFFF&\fscx100\fscy100} ETAPAS
+Dialogue: 1,0:00:10.19,0:00:10.91,Cap,,0,0,0,,{\an5\pos(540,1342)}TODAS AS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ETAPAS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:10.91,0:00:11.15,Cap,,0,0,0,,{\an5\pos(540,1342)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} ESSA CERVEJARIA
+Dialogue: 1,0:00:11.15,0:00:11.39,Cap,,0,0,0,,{\an5\pos(540,1342)}QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ESSA{\c&HFFFFFF&\fscx100\fscy100} CERVEJARIA
+Dialogue: 1,0:00:11.39,0:00:12.03,Cap,,0,0,0,,{\an5\pos(540,1342)}QUE ESSA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CERVEJARIA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:12.03,0:00:12.19,Cap,,0,0,0,,{\an5\pos(540,1323)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} A HEINEKEN
+Dialogue: 1,0:00:12.19,0:00:12.27,Cap,,0,0,0,,{\an5\pos(540,1323)}QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} HEINEKEN
+Dialogue: 1,0:00:12.27,0:00:12.83,Cap,,0,0,0,,{\an5\pos(540,1323)}QUE A {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}HEINEKEN{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:12.83,0:00:12.91,Cap,,0,0,0,,{\an5\pos(540,1337)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÃO{\c&HFFFFFF&\fscx100\fscy100} TEVE QUE PASSAR
+Dialogue: 1,0:00:12.91,0:00:13.15,Cap,,0,0,0,,{\an5\pos(540,1337)}NÃO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TEVE{\c&HFFFFFF&\fscx100\fscy100} QUE PASSAR
+Dialogue: 1,0:00:13.15,0:00:13.23,Cap,,0,0,0,,{\an5\pos(540,1337)}NÃO TEVE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} PASSAR
+Dialogue: 1,0:00:13.23,0:00:13.71,Cap,,0,0,0,,{\an5\pos(540,1337)}NÃO TEVE QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PASSAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:13.71,0:00:14.59,Cap,,0,0,0,,{\an5\pos(540,1337)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} TER UM
+Dialogue: 1,0:00:14.59,0:00:14.75,Cap,,0,0,0,,{\an5\pos(540,1337)}PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TER{\c&HFFFFFF&\fscx100\fscy100} UM
+Dialogue: 1,0:00:14.75,0:00:14.83,Cap,,0,0,0,,{\an5\pos(540,1337)}PRA TER {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}UM{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:14.83,0:00:15.31,Cap,,0,0,0,,{\an5\pos(540,1302)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}MARTELO{\c&HFFFFFF&\fscx100\fscy100} E FALAR
+Dialogue: 1,0:00:15.31,0:00:15.39,Cap,,0,0,0,,{\an5\pos(540,1302)}MARTELO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} FALAR
+Dialogue: 1,0:00:15.39,0:00:15.71,Cap,,0,0,0,,{\an5\pos(540,1302)}MARTELO E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FALAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:15.71,0:00:16.03,Cap,,0,0,0,,{\an5\pos(540,1355)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÃO{\c&HFFFFFF&\fscx100\fscy100} VAMOS SIM.
+Dialogue: 1,0:00:16.03,0:00:16.35,Cap,,0,0,0,,{\an5\pos(540,1355)}NÃO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VAMOS{\c&HFFFFFF&\fscx100\fscy100} SIM.
+Dialogue: 1,0:00:16.35,0:00:17.55,Cap,,0,0,0,,{\an5\pos(540,1355)}NÃO VAMOS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SIM.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:17.63,0:00:18.03,Cap,,0,0,0,,{\an5\pos(540,1352)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PORQUE{\c&HFFFFFF&\fscx100\fscy100} NÃO É SIMPLES
+Dialogue: 1,0:00:18.03,0:00:18.11,Cap,,0,0,0,,{\an5\pos(540,1352)}PORQUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÃO{\c&HFFFFFF&\fscx100\fscy100} É SIMPLES
+Dialogue: 1,0:00:18.11,0:00:18.27,Cap,,0,0,0,,{\an5\pos(540,1352)}PORQUE NÃO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}É{\c&HFFFFFF&\fscx100\fscy100} SIMPLES
+Dialogue: 1,0:00:18.27,0:00:18.67,Cap,,0,0,0,,{\an5\pos(540,1352)}PORQUE NÃO É {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SIMPLES{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:18.67,0:00:18.83,Cap,,0,0,0,,{\an5\pos(540,1329)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} UMA EMPRESA DESSE
+Dialogue: 1,0:00:18.83,0:00:18.91,Cap,,0,0,0,,{\an5\pos(540,1329)}PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}UMA{\c&HFFFFFF&\fscx100\fscy100} EMPRESA DESSE
+Dialogue: 1,0:00:18.91,0:00:19.07,Cap,,0,0,0,,{\an5\pos(540,1329)}PRA UMA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}EMPRESA{\c&HFFFFFF&\fscx100\fscy100} DESSE
+Dialogue: 1,0:00:19.07,0:00:19.59,Cap,,0,0,0,,{\an5\pos(540,1329)}PRA UMA EMPRESA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DESSE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:19.59,0:00:20.79,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TAMANHO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:20.95,0:00:21.27,Cap,,0,0,0,,{\an5\pos(540,1322)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TOMAR{\c&HFFFFFF&\fscx100\fscy100} UMA DECISÃO
+Dialogue: 1,0:00:21.27,0:00:21.43,Cap,,0,0,0,,{\an5\pos(540,1322)}TOMAR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}UMA{\c&HFFFFFF&\fscx100\fscy100} DECISÃO
+Dialogue: 1,0:00:21.43,0:00:21.67,Cap,,0,0,0,,{\an5\pos(540,1322)}TOMAR UMA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DECISÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:22.07,0:00:22.31,Cap,,0,0,0,,{\an5\pos(540,1352)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SE{\c&HFFFFFF&\fscx100\fscy100} TOMAR UMA DECISÃO
+Dialogue: 1,0:00:22.31,0:00:22.47,Cap,,0,0,0,,{\an5\pos(540,1352)}SE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TOMAR{\c&HFFFFFF&\fscx100\fscy100} UMA DECISÃO
+Dialogue: 1,0:00:22.47,0:00:22.63,Cap,,0,0,0,,{\an5\pos(540,1352)}SE TOMAR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}UMA{\c&HFFFFFF&\fscx100\fscy100} DECISÃO
+Dialogue: 1,0:00:22.63,0:00:23.83,Cap,,0,0,0,,{\an5\pos(540,1352)}SE TOMAR UMA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DECISÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:23.91,0:00:24.23,Cap,,0,0,0,,{\an5\pos(540,1430)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}É{\c&HFFFFFF&\fscx100\fscy100} ATÉ QUE
+Dialogue: 1,0:00:24.23,0:00:24.47,Cap,,0,0,0,,{\an5\pos(540,1430)}É {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ATÉ{\c&HFFFFFF&\fscx100\fscy100} QUE
+Dialogue: 1,0:00:24.47,0:00:24.63,Cap,,0,0,0,,{\an5\pos(540,1430)}É ATÉ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:24.63,0:00:25.03,Cap,,0,0,0,,{\an5\pos(540,1334)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FÁCIL{\c&HFFFFFF&\fscx100\fscy100} MAS IMPLEMENTAR
+Dialogue: 1,0:00:25.03,0:00:25.27,Cap,,0,0,0,,{\an5\pos(540,1334)}FÁCIL {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}MAS{\c&HFFFFFF&\fscx100\fscy100} IMPLEMENTAR
+Dialogue: 1,0:00:25.27,0:00:25.91,Cap,,0,0,0,,{\an5\pos(540,1334)}FÁCIL MAS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}IMPLEMENTAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:25.91,0:00:26.39,Cap,,0,0,0,,{\an5\pos(540,1335)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ELA{\c&HFFFFFF&\fscx100\fscy100} É ...
+Dialogue: 1,0:00:26.39,0:00:26.55,Cap,,0,0,0,,{\an5\pos(540,1335)}ELA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}É{\c&HFFFFFF&\fscx100\fscy100} ...
+Dialogue: 1,0:00:26.55,0:00:27.03,Cap,,0,0,0,,{\an5\pos(540,1335)}ELA É {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}...{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:27.03,0:00:27.27,Cap,,0,0,0,,{\an5\pos(540,1313)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PORQUE{\c&HFFFFFF&\fscx100\fscy100} TIPO
+Dialogue: 1,0:00:27.27,0:00:27.83,Cap,,0,0,0,,{\an5\pos(540,1313)}PORQUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TIPO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:27.83,0:00:28.23,Cap,,0,0,0,,{\an5\pos(540,1330)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}IMAGINANDO{\c&HFFFFFF&\fscx100\fscy100} A GALERA
+Dialogue: 1,0:00:28.23,0:00:28.31,Cap,,0,0,0,,{\an5\pos(540,1330)}IMAGINANDO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} GALERA
+Dialogue: 1,0:00:28.31,0:00:28.79,Cap,,0,0,0,,{\an5\pos(540,1330)}IMAGINANDO A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}GALERA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:28.79,0:00:29.03,Cap,,0,0,0,,{\an5\pos(540,1330)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TANTO{\c&HFFFFFF&\fscx100\fscy100} DE ÁREA
+Dialogue: 1,0:00:29.03,0:00:29.19,Cap,,0,0,0,,{\an5\pos(540,1330)}TANTO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DE{\c&HFFFFFF&\fscx100\fscy100} ÁREA
+Dialogue: 1,0:00:29.19,0:00:29.51,Cap,,0,0,0,,{\an5\pos(540,1330)}TANTO DE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ÁREA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:29.51,0:00:30.23,Cap,,0,0,0,,{\an5\pos(540,1330)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ENVOLVIDA{\c&HFFFFFF&\fscx100\fscy100} SABE?
+Dialogue: 1,0:00:30.23,0:00:30.82,Cap,,0,0,0,,{\an5\pos(540,1330)}ENVOLVIDA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SABE?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:33.92,0:00:34.14,Cap,,0,0,0,,{\an5\pos(540,1324)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}MARCA{\c&HFFFFFF&\fscx100\fscy100} TEM TERRITÓRIO
+Dialogue: 1,0:00:34.14,0:00:34.46,Cap,,0,0,0,,{\an5\pos(540,1324)}MARCA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TEM{\c&HFFFFFF&\fscx100\fscy100} TERRITÓRIO
+Dialogue: 1,0:00:34.46,0:00:35.02,Cap,,0,0,0,,{\an5\pos(540,1324)}MARCA TEM {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}TERRITÓRIO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:35.02,0:00:35.18,Cap,,0,0,0,,{\an5\pos(540,1370)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} ELA QUAL
+Dialogue: 1,0:00:35.18,0:00:35.50,Cap,,0,0,0,,{\an5\pos(540,1370)}PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ELA{\c&HFFFFFF&\fscx100\fscy100} QUAL
+Dialogue: 1,0:00:35.50,0:00:35.82,Cap,,0,0,0,,{\an5\pos(540,1370)}PRA ELA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUAL{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:35.82,0:00:36.49,Cap,,0,0,0,,{\an5\pos(540,1370)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}MARCA{\c&HFFFFFF&\fscx100\fscy100} QUAL SITUAÇÃO
+Dialogue: 1,0:00:39.59,0:00:40.78,Cap,,0,0,0,,{\an5\pos(540,1377)}BIRRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VAI{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:40.98,0:00:42.10,Cap,,0,0,0,,{\an5\pos(540,1435)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}OCUPAR.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:42.10,0:00:42.42,Cap,,0,0,0,,{\an5\pos(540,1435)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ELA{\c&HFFFFFF&\fscx100\fscy100} VAI AGREGAR
+Dialogue: 1,0:00:42.42,0:00:42.87,Cap,,0,0,0,,{\an5\pos(540,1435)}ELA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VAI{\c&HFFFFFF&\fscx100\fscy100} AGREGAR
+Dialogue: 1,0:00:42.87,0:00:43.59,Cap,,0,0,0,,{\an5\pos(540,1435)}ELA VAI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AGREGAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:43.59,0:00:43.75,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NO{\c&HFFFFFF&\fscx100\fscy100} PORTFÓLIO
+Dialogue: 1,0:00:43.75,0:00:44.34,Cap,,0,0,0,,{\an5\pos(540,1300)}NO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PORTFÓLIO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:47.87,0:00:48.11,Cap,,0,0,0,,{\an5\pos(540,1410)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}O{\c&HFFFFFF&\fscx100\fscy100} PORTFÓLIO QUE
+Dialogue: 1,0:00:48.11,0:00:48.67,Cap,,0,0,0,,{\an5\pos(540,1410)}O {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PORTFÓLIO{\c&HFFFFFF&\fscx100\fscy100} QUE
+Dialogue: 1,0:00:48.67,0:00:48.75,Cap,,0,0,0,,{\an5\pos(540,1410)}O PORTFÓLIO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:48.75,0:00:48.83,Cap,,0,0,0,,{\an5\pos(540,1413)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} GENTE JÁ TEM NÉ?
+Dialogue: 1,0:00:48.83,0:00:48.99,Cap,,0,0,0,,{\an5\pos(540,1413)}A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}GENTE{\c&HFFFFFF&\fscx100\fscy100} JÁ TEM NÉ?
+Dialogue: 1,0:00:48.99,0:00:49.15,Cap,,0,0,0,,{\an5\pos(540,1413)}A GENTE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}JÁ{\c&HFFFFFF&\fscx100\fscy100} TEM NÉ?
+Dialogue: 1,0:00:49.15,0:00:49.39,Cap,,0,0,0,,{\an5\pos(540,1413)}A GENTE JÁ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TEM{\c&HFFFFFF&\fscx100\fscy100} NÉ?
+Dialogue: 1,0:00:49.39,0:00:49.50,Cap,,0,0,0,,{\an5\pos(540,1413)}A GENTE JÁ TEM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÉ?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:52.60,0:00:53.47,Cap,,0,0,0,,{\an5\pos(540,1305)}{\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}HEINEKEN{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:53.63,0:00:54.56,Cap,,0,0,0,,{\an5\pos(540,1304)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÉ?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:54.56,0:00:54.80,Cap,,0,0,0,,{\an5\pos(540,1304)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VOU{\c&HFFFFFF&\fscx100\fscy100} TIRAR DINHEIRO
+Dialogue: 1,0:00:54.80,0:00:55.12,Cap,,0,0,0,,{\an5\pos(540,1304)}VOU {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TIRAR{\c&HFFFFFF&\fscx100\fscy100} DINHEIRO
+Dialogue: 1,0:00:55.12,0:00:55.36,Cap,,0,0,0,,{\an5\pos(540,1304)}VOU TIRAR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DINHEIRO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:55.36,0:00:55.52,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DO{\c&HFFFFFF&\fscx100\fscy100} BOLSO DIREITO
+Dialogue: 1,0:00:55.52,0:00:55.92,Cap,,0,0,0,,{\an5\pos(540,1300)}DO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}BOLSO{\c&HFFFFFF&\fscx100\fscy100} DIREITO
+Dialogue: 1,0:00:55.92,0:00:56.16,Cap,,0,0,0,,{\an5\pos(540,1300)}DO BOLSO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DIREITO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:56.16,0:00:56.32,Cap,,0,0,0,,{\an5\pos(540,1305)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} PÔR NO ESQUERDO
+Dialogue: 1,0:00:56.32,0:00:56.48,Cap,,0,0,0,,{\an5\pos(540,1305)}E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PÔR{\c&HFFFFFF&\fscx100\fscy100} NO ESQUERDO
+Dialogue: 1,0:00:56.48,0:00:56.64,Cap,,0,0,0,,{\an5\pos(540,1305)}E PÔR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NO{\c&HFFFFFF&\fscx100\fscy100} ESQUERDO
+Dialogue: 1,0:00:56.64,0:00:56.96,Cap,,0,0,0,,{\an5\pos(540,1305)}E PÔR NO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ESQUERDO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:56.96,0:00:57.12,Cap,,0,0,0,,{\an5\pos(540,1305)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}COM{\c&HFFFFFF&\fscx100\fscy100} UM ...
+Dialogue: 1,0:00:57.12,0:00:57.20,Cap,,0,0,0,,{\an5\pos(540,1305)}COM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}UM{\c&HFFFFFF&\fscx100\fscy100} ...
+Dialogue: 1,0:00:57.20,0:00:57.60,Cap,,0,0,0,,{\an5\pos(540,1305)}COM UM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}...{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:57.60,0:00:58.16,Cap,,0,0,0,,{\an5\pos(540,1330)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CUSTO{\c&HFFFFFF&\fscx100\fscy100} OU NÃO
+Dialogue: 1,0:00:58.16,0:00:58.32,Cap,,0,0,0,,{\an5\pos(540,1330)}CUSTO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}OU{\c&HFFFFFF&\fscx100\fscy100} NÃO
+Dialogue: 1,0:00:58.32,0:00:58.64,Cap,,0,0,0,,{\an5\pos(540,1330)}CUSTO OU {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:58.64,0:00:58.96,Cap,,0,0,0,,{\an5\pos(540,1334)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VAI{\c&HFFFFFF&\fscx100\fscy100} REALMENTE VALER
+Dialogue: 1,0:00:58.96,0:00:59.51,Cap,,0,0,0,,{\an5\pos(540,1334)}VAI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}REALMENTE{\c&HFFFFFF&\fscx100\fscy100} VALER
+Dialogue: 1,0:00:59.51,0:00:59.91,Cap,,0,0,0,,{\an5\pos(540,1334)}VAI REALMENTE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VALER{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:00:59.91,0:00:59.99,Cap,,0,0,0,,{\an5\pos(540,1353)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} PENA.
+Dialogue: 1,0:00:59.99,0:01:00.89,Cap,,0,0,0,,{\an5\pos(540,1353)}A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PENA.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:00.89,0:01:01.13,Cap,,0,0,0,,{\an5\pos(540,1353)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÃO{\c&HFFFFFF&\fscx100\fscy100} TEM ESPAÇO
+Dialogue: 1,0:01:01.13,0:01:01.37,Cap,,0,0,0,,{\an5\pos(540,1353)}NÃO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TEM{\c&HFFFFFF&\fscx100\fscy100} ESPAÇO
+Dialogue: 1,0:01:01.37,0:01:02.14,Cap,,0,0,0,,{\an5\pos(540,1353)}NÃO TEM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ESPAÇO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:02.14,0:01:02.22,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} AÍ A GENTE
+Dialogue: 1,0:01:02.22,0:01:02.46,Cap,,0,0,0,,{\an5\pos(540,1300)}E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AÍ{\c&HFFFFFF&\fscx100\fscy100} A GENTE
+Dialogue: 1,0:01:02.46,0:01:02.62,Cap,,0,0,0,,{\an5\pos(540,1300)}E AÍ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} GENTE
+Dialogue: 1,0:01:02.62,0:01:02.81,Cap,,0,0,0,,{\an5\pos(540,1300)}E AÍ A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}GENTE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:05.91,0:01:06.30,Cap,,0,0,0,,{\an5\pos(540,1314)}NÃO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}LANÇA{\c&HFFFFFF&\fscx100\fscy100} PORQUE
+Dialogue: 1,0:01:06.30,0:01:06.75,Cap,,0,0,0,,{\an5\pos(540,1314)}NÃO LANÇA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PORQUE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:06.75,0:01:07.15,Cap,,0,0,0,,{\an5\pos(540,1314)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRODUZIR{\c&HFFFFFF&\fscx100\fscy100} É CARO
+Dialogue: 1,0:01:07.15,0:01:07.31,Cap,,0,0,0,,{\an5\pos(540,1314)}PRODUZIR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}É{\c&HFFFFFF&\fscx100\fscy100} CARO
+Dialogue: 1,0:01:07.31,0:01:07.71,Cap,,0,0,0,,{\an5\pos(540,1314)}PRODUZIR É {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CARO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:07.71,0:01:08.19,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}IMPORTAR{\c&HFFFFFF&\fscx100\fscy100} TEM
+Dialogue: 1,0:01:08.19,0:01:08.43,Cap,,0,0,0,,{\an5\pos(540,1300)}IMPORTAR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TEM{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:08.43,0:01:09.06,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DIFICULDADE{\c&HFFFFFF&\fscx100\fscy100} NÃO
+Dialogue: 1,0:01:09.06,0:01:09.38,Cap,,0,0,0,,{\an5\pos(540,1300)}DIFICULDADE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:09.38,0:01:09.86,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}BELEZA{\c&HFFFFFF&\fscx100\fscy100} VAMOS TOMAR
+Dialogue: 1,0:01:09.86,0:01:10.42,Cap,,0,0,0,,{\an5\pos(540,1300)}BELEZA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VAMOS{\c&HFFFFFF&\fscx100\fscy100} TOMAR
+Dialogue: 1,0:01:10.42,0:01:10.66,Cap,,0,0,0,,{\an5\pos(540,1300)}BELEZA VAMOS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TOMAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:10.66,0:01:10.74,Cap,,0,0,0,,{\an5\pos(540,1329)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} DECISÃO DE
+Dialogue: 1,0:01:10.74,0:01:11.38,Cap,,0,0,0,,{\an5\pos(540,1329)}A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DECISÃO{\c&HFFFFFF&\fscx100\fscy100} DE
+Dialogue: 1,0:01:11.38,0:01:11.46,Cap,,0,0,0,,{\an5\pos(540,1329)}A DECISÃO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:11.46,0:01:11.86,Cap,,0,0,0,,{\an5\pos(540,1393)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRODUZIR{\c&HFFFFFF&\fscx100\fscy100} AQUI QUE
+Dialogue: 1,0:01:11.86,0:01:12.10,Cap,,0,0,0,,{\an5\pos(540,1393)}PRODUZIR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AQUI{\c&HFFFFFF&\fscx100\fscy100} QUE
+Dialogue: 1,0:01:12.10,0:01:12.26,Cap,,0,0,0,,{\an5\pos(540,1393)}PRODUZIR AQUI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:12.26,0:01:12.42,Cap,,0,0,0,,{\an5\pos(540,1393)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FOI{\c&HFFFFFF&\fscx100\fscy100} DECISÃO QUE ELES
+Dialogue: 1,0:01:12.42,0:01:12.74,Cap,,0,0,0,,{\an5\pos(540,1393)}FOI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DECISÃO{\c&HFFFFFF&\fscx100\fscy100} QUE ELES
+Dialogue: 1,0:01:12.74,0:01:12.82,Cap,,0,0,0,,{\an5\pos(540,1393)}FOI DECISÃO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} ELES
+Dialogue: 1,0:01:12.82,0:01:12.98,Cap,,0,0,0,,{\an5\pos(540,1393)}FOI DECISÃO QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ELES{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:12.98,0:01:13.46,Cap,,0,0,0,,{\an5\pos(540,1393)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TOMARAM{\c&HFFFFFF&\fscx100\fscy100} NÉ?
+Dialogue: 1,0:01:13.46,0:01:13.75,Cap,,0,0,0,,{\an5\pos(540,1393)}TOMARAM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÉ?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:17.16,0:01:17.56,Cap,,0,0,0,,{\an5\pos(540,1467)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRODUTO{\c&HFFFFFF&\fscx100\fscy100} IGUAL?
+Dialogue: 1,0:01:17.56,0:01:18.44,Cap,,0,0,0,,{\an5\pos(540,1467)}PRODUTO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}IGUAL?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:18.44,0:01:18.68,Cap,,0,0,0,,{\an5\pos(540,1467)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}O{\c&HFFFFFF&\fscx100\fscy100} PRODUTO ELE
+Dialogue: 1,0:01:18.68,0:01:19.16,Cap,,0,0,0,,{\an5\pos(540,1467)}O {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRODUTO{\c&HFFFFFF&\fscx100\fscy100} ELE
+Dialogue: 1,0:01:19.16,0:01:19.56,Cap,,0,0,0,,{\an5\pos(540,1467)}O PRODUTO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ELE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:19.88,0:01:20.04,Cap,,0,0,0,,{\an5\pos(540,1322)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VAI{\c&HFFFFFF&\fscx100\fscy100} SER APROVADO
+Dialogue: 1,0:01:20.04,0:01:20.20,Cap,,0,0,0,,{\an5\pos(540,1322)}VAI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SER{\c&HFFFFFF&\fscx100\fscy100} APROVADO
+Dialogue: 1,0:01:20.20,0:01:20.92,Cap,,0,0,0,,{\an5\pos(540,1322)}VAI SER {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}APROVADO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:21.24,0:01:21.48,Cap,,0,0,0,,{\an5\pos(540,1346)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VOCÊ{\c&HFFFFFF&\fscx100\fscy100} TEM QUE PENSAR
+Dialogue: 1,0:01:21.48,0:01:21.56,Cap,,0,0,0,,{\an5\pos(540,1346)}VOCÊ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TEM{\c&HFFFFFF&\fscx100\fscy100} QUE PENSAR
+Dialogue: 1,0:01:21.56,0:01:21.72,Cap,,0,0,0,,{\an5\pos(540,1346)}VOCÊ TEM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} PENSAR
+Dialogue: 1,0:01:21.72,0:01:22.04,Cap,,0,0,0,,{\an5\pos(540,1346)}VOCÊ TEM QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PENSAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:22.04,0:01:22.20,Cap,,0,0,0,,{\an5\pos(540,1362)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}EM{\c&HFFFFFF&\fscx100\fscy100} MUITA COISA
+Dialogue: 1,0:01:22.20,0:01:22.60,Cap,,0,0,0,,{\an5\pos(540,1362)}EM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}MUITA{\c&HFFFFFF&\fscx100\fscy100} COISA
+Dialogue: 1,0:01:22.60,0:01:23.40,Cap,,0,0,0,,{\an5\pos(540,1362)}EM MUITA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}COISA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:23.40,0:01:23.56,Cap,,0,0,0,,{\an5\pos(540,1362)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TÁ{\c&HFFFFFF&\fscx100\fscy100} LIGADO?
+Dialogue: 1,0:01:23.56,0:01:24.04,Cap,,0,0,0,,{\an5\pos(540,1362)}TÁ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}LIGADO?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:24.04,0:01:24.80,Cap,,0,0,0,,{\an5\pos(540,1362)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PUTZ{\c&HFFFFFF&\fscx100\fscy100} ONDE?
+Dialogue: 1,0:01:27.90,0:01:28.18,Cap,,0,0,0,,{\an5\pos(540,1415)}{\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}MARKETING{\c&HFFFFFF&\fscx100\fscy100} EU VOU
+Dialogue: 1,0:01:28.18,0:01:28.34,Cap,,0,0,0,,{\an5\pos(540,1415)}MARKETING {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}EU{\c&HFFFFFF&\fscx100\fscy100} VOU
+Dialogue: 1,0:01:28.34,0:01:28.66,Cap,,0,0,0,,{\an5\pos(540,1415)}MARKETING EU {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VOU{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:28.66,0:01:29.22,Cap,,0,0,0,,{\an5\pos(540,1519)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}COLOCAR{\c&HFFFFFF&\fscx100\fscy100} NISSO
+Dialogue: 1,0:01:29.22,0:01:29.77,Cap,,0,0,0,,{\an5\pos(540,1519)}COLOCAR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NISSO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:32.87,0:01:33.19,Cap,,0,0,0,,{\an5\pos(540,1320)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FAZER{\c&HFFFFFF&\fscx100\fscy100} ESCALA PEQUENA
+Dialogue: 1,0:01:33.19,0:01:33.59,Cap,,0,0,0,,{\an5\pos(540,1320)}FAZER {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ESCALA{\c&HFFFFFF&\fscx100\fscy100} PEQUENA
+Dialogue: 1,0:01:33.59,0:01:34.79,Cap,,0,0,0,,{\an5\pos(540,1320)}FAZER ESCALA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PEQUENA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:35.27,0:01:35.67,Cap,,0,0,0,,{\an5\pos(540,1315)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TIPO{\c&HFFFFFF&\fscx100\fscy100} E DEPOIS
+Dialogue: 1,0:01:35.67,0:01:35.83,Cap,,0,0,0,,{\an5\pos(540,1315)}TIPO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} DEPOIS
+Dialogue: 1,0:01:35.83,0:01:36.39,Cap,,0,0,0,,{\an5\pos(540,1315)}TIPO E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DEPOIS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:36.39,0:01:36.79,Cap,,0,0,0,,{\an5\pos(540,1309)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FAZER{\c&HFFFFFF&\fscx100\fscy100} VÁRIAS RODADAS
+Dialogue: 1,0:01:36.79,0:01:37.11,Cap,,0,0,0,,{\an5\pos(540,1309)}FAZER {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VÁRIAS{\c&HFFFFFF&\fscx100\fscy100} RODADAS
+Dialogue: 1,0:01:37.11,0:01:37.59,Cap,,0,0,0,,{\an5\pos(540,1309)}FAZER VÁRIAS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}RODADAS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:37.59,0:01:37.75,Cap,,0,0,0,,{\an5\pos(540,1346)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DE{\c&HFFFFFF&\fscx100\fscy100} AVALIAÇÃO
+Dialogue: 1,0:01:37.75,0:01:38.71,Cap,,0,0,0,,{\an5\pos(540,1346)}DE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AVALIAÇÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:38.71,0:01:38.95,Cap,,0,0,0,,{\an5\pos(540,1351)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} VER SE
+Dialogue: 1,0:01:38.95,0:01:39.19,Cap,,0,0,0,,{\an5\pos(540,1351)}PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VER{\c&HFFFFFF&\fscx100\fscy100} SE
+Dialogue: 1,0:01:39.19,0:01:39.43,Cap,,0,0,0,,{\an5\pos(540,1351)}PRA VER {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:39.43,0:01:39.59,Cap,,0,0,0,,{\an5\pos(540,1351)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TÁ{\c&HFFFFFF&\fscx100\fscy100} DANDO CERTO
+Dialogue: 1,0:01:39.59,0:01:39.91,Cap,,0,0,0,,{\an5\pos(540,1351)}TÁ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DANDO{\c&HFFFFFF&\fscx100\fscy100} CERTO
+Dialogue: 1,0:01:39.91,0:01:40.46,Cap,,0,0,0,,{\an5\pos(540,1351)}TÁ DANDO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CERTO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:40.46,0:01:40.78,Cap,,0,0,0,,{\an5\pos(540,1347)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TUDO{\c&HFFFFFF&\fscx100\fscy100} ISSO PORQUE
+Dialogue: 1,0:01:40.78,0:01:41.39,Cap,,0,0,0,,{\an5\pos(540,1347)}TUDO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ISSO{\c&HFFFFFF&\fscx100\fscy100} PORQUE
+Dialogue: 1,0:01:41.39,0:01:41.87,Cap,,0,0,0,,{\an5\pos(540,1347)}TUDO ISSO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PORQUE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:41.87,0:01:42.03,Cap,,0,0,0,,{\an5\pos(540,1316)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} HEINEKEN PERDEU
+Dialogue: 1,0:01:42.03,0:01:42.70,Cap,,0,0,0,,{\an5\pos(540,1316)}A {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}HEINEKEN{\c&HFFFFFF&\fscx100\fscy100} PERDEU
+Dialogue: 1,0:01:46.79,0:01:46.95,Cap,,0,0,0,,{\an5\pos(540,1347)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} POSIÇÃO DA
+Dialogue: 1,0:01:46.95,0:01:47.59,Cap,,0,0,0,,{\an5\pos(540,1347)}A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}POSIÇÃO{\c&HFFFFFF&\fscx100\fscy100} DA
+Dialogue: 1,0:01:47.59,0:01:47.75,Cap,,0,0,0,,{\an5\pos(540,1347)}A POSIÇÃO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:47.75,0:01:48.23,Cap,,0,0,0,,{\an5\pos(540,1347)}{\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}LIDERANÇA{\c&HFFFFFF&\fscx100\fscy100} PARA A AMBEV
+Dialogue: 1,0:01:48.23,0:01:48.31,Cap,,0,0,0,,{\an5\pos(540,1347)}LIDERANÇA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PARA{\c&HFFFFFF&\fscx100\fscy100} A AMBEV
+Dialogue: 1,0:01:48.31,0:01:48.39,Cap,,0,0,0,,{\an5\pos(540,1347)}LIDERANÇA PARA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} AMBEV
+Dialogue: 1,0:01:48.39,0:01:48.95,Cap,,0,0,0,,{\an5\pos(540,1347)}LIDERANÇA PARA A {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}AMBEV{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:49.11,0:01:49.19,Cap,,0,0,0,,{\an5\pos(540,1323)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} HEINEKEN QUE
+Dialogue: 1,0:01:49.19,0:01:49.75,Cap,,0,0,0,,{\an5\pos(540,1323)}A {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}HEINEKEN{\c&HFFFFFF&\fscx100\fscy100} QUE
+Dialogue: 1,0:01:49.75,0:01:49.91,Cap,,0,0,0,,{\an5\pos(540,1323)}A HEINEKEN {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:49.91,0:01:50.23,Cap,,0,0,0,,{\an5\pos(540,1323)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SEMPRE{\c&HFFFFFF&\fscx100\fscy100} DOMINOU COM
+Dialogue: 1,0:01:50.23,0:01:50.71,Cap,,0,0,0,,{\an5\pos(540,1323)}SEMPRE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DOMINOU{\c&HFFFFFF&\fscx100\fscy100} COM
+Dialogue: 1,0:01:50.71,0:01:50.95,Cap,,0,0,0,,{\an5\pos(540,1323)}SEMPRE DOMINOU {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}COM{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:50.95,0:01:51.03,Cap,,0,0,0,,{\an5\pos(540,1402)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} PRÓPRIA HEINEKEN.
+Dialogue: 1,0:01:51.03,0:01:51.35,Cap,,0,0,0,,{\an5\pos(540,1402)}A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRÓPRIA{\c&HFFFFFF&\fscx100\fscy100} HEINEKEN.
+Dialogue: 1,0:01:51.35,0:01:52.55,Cap,,0,0,0,,{\an5\pos(540,1402)}A PRÓPRIA {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}HEINEKEN.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:53.65,0:01:53.97,Cap,,0,0,0,,{\an5\pos(540,1325)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} AGORA
+Dialogue: 1,0:01:53.97,0:01:54.39,Cap,,0,0,0,,{\an5\pos(540,1325)}E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AGORA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:54.39,0:01:54.86,Cap,,0,0,0,,{\an5\pos(540,1359)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} HEINEKEN
+Dialogue: 1,0:01:54.86,0:01:55.82,Cap,,0,0,0,,{\an5\pos(540,1359)}A {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}HEINEKEN{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:55.82,0:01:56.86,Cap,,0,0,0,,{\an5\pos(540,1421)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}RAPIDAMENTE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:56.86,0:01:57.70,Cap,,0,0,0,,{\an5\pos(540,1421)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}RAPIDAMENTE{\c&HFFFFFF&\fscx100\fscy100} JÁ TOMOU
+Dialogue: 1,0:01:57.70,0:01:57.86,Cap,,0,0,0,,{\an5\pos(540,1421)}RAPIDAMENTE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}JÁ{\c&HFFFFFF&\fscx100\fscy100} TOMOU
+Dialogue: 1,0:01:57.86,0:01:58.18,Cap,,0,0,0,,{\an5\pos(540,1421)}RAPIDAMENTE JÁ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TOMOU{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:58.18,0:01:58.42,Cap,,0,0,0,,{\an5\pos(540,1346)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DUAS{\c&HFFFFFF&\fscx100\fscy100} MEGA DECISÕES
+Dialogue: 1,0:01:58.42,0:01:58.74,Cap,,0,0,0,,{\an5\pos(540,1346)}DUAS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}MEGA{\c&HFFFFFF&\fscx100\fscy100} DECISÕES
+Dialogue: 1,0:01:58.74,0:01:59.58,Cap,,0,0,0,,{\an5\pos(540,1346)}DUAS MEGA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DECISÕES{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:01:59.58,0:01:59.82,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} É NO
+Dialogue: 1,0:01:59.82,0:02:00.27,Cap,,0,0,0,,{\an5\pos(540,1300)}QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}É{\c&HFFFFFF&\fscx100\fscy100} NO
+Dialogue: 1,0:02:00.27,0:02:00.51,Cap,,0,0,0,,{\an5\pos(540,1300)}QUE É {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:03.95,0:02:04.51,Cap,,0,0,0,,{\an5\pos(540,1338)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRAYA{\c&HFFFFFF&\fscx100\fscy100} PRA BRIGAR
+Dialogue: 1,0:02:04.51,0:02:04.67,Cap,,0,0,0,,{\an5\pos(540,1338)}PRAYA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} BRIGAR
+Dialogue: 1,0:02:04.67,0:02:05.15,Cap,,0,0,0,,{\an5\pos(540,1338)}PRAYA PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}BRIGAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:05.15,0:02:05.55,Cap,,0,0,0,,{\an5\pos(540,1338)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DIRETAMENTE{\c&HFFFFFF&\fscx100\fscy100} COM A CORONA.
+Dialogue: 1,0:02:05.55,0:02:05.71,Cap,,0,0,0,,{\an5\pos(540,1338)}DIRETAMENTE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}COM{\c&HFFFFFF&\fscx100\fscy100} A CORONA.
+Dialogue: 1,0:02:05.71,0:02:05.79,Cap,,0,0,0,,{\an5\pos(540,1338)}DIRETAMENTE COM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} CORONA.
+Dialogue: 1,0:02:05.79,0:02:06.77,Cap,,0,0,0,,{\an5\pos(540,1338)}DIRETAMENTE COM A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CORONA.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:06.77,0:02:07.01,Cap,,0,0,0,,{\an5\pos(540,1330)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} AGORA A
+Dialogue: 1,0:02:07.01,0:02:07.33,Cap,,0,0,0,,{\an5\pos(540,1330)}E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AGORA{\c&HFFFFFF&\fscx100\fscy100} A
+Dialogue: 1,0:02:07.33,0:02:07.44,Cap,,0,0,0,,{\an5\pos(540,1330)}E AGORA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:10.14,0:02:10.77,Cap,,0,0,0,,{\an5\pos(540,1305)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CLARAMENTE{\c&HFFFFFF&\fscx100\fscy100} PRA BRIGAR
+Dialogue: 1,0:02:10.77,0:02:11.01,Cap,,0,0,0,,{\an5\pos(540,1305)}CLARAMENTE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} BRIGAR
+Dialogue: 1,0:02:11.01,0:02:11.33,Cap,,0,0,0,,{\an5\pos(540,1305)}CLARAMENTE PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}BRIGAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:11.33,0:02:11.41,Cap,,0,0,0,,{\an5\pos(540,1305)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}COM{\c&HFFFFFF&\fscx100\fscy100} A STELLA.
+Dialogue: 1,0:02:11.41,0:02:11.49,Cap,,0,0,0,,{\an5\pos(540,1305)}COM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} STELLA.
+Dialogue: 1,0:02:11.49,0:02:12.20,Cap,,0,0,0,,{\an5\pos(540,1305)}COM A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}STELLA.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:15.88,0:02:16.86,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}RESTAURANTES.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:16.86,0:02:17.02,Cap,,0,0,0,,{\an5\pos(540,1325)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} A AMBEV
+Dialogue: 1,0:02:17.02,0:02:17.34,Cap,,0,0,0,,{\an5\pos(540,1325)}E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} AMBEV
+Dialogue: 1,0:02:17.34,0:02:18.49,Cap,,0,0,0,,{\an5\pos(540,1325)}E A {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}AMBEV{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:21.39,0:02:22.25,Cap,,0,0,0,,{\an5\pos(540,1345)}EM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CONSCIENTIZAÇÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:22.54,0:02:22.78,Cap,,0,0,0,,{\an5\pos(540,1306)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DE{\c&HFFFFFF&\fscx100\fscy100} BARES E
+Dialogue: 1,0:02:22.78,0:02:23.18,Cap,,0,0,0,,{\an5\pos(540,1306)}DE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}BARES{\c&HFFFFFF&\fscx100\fscy100} E
+Dialogue: 1,0:02:23.18,0:02:23.34,Cap,,0,0,0,,{\an5\pos(540,1306)}DE BARES {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:23.34,0:02:24.22,Cap,,0,0,0,,{\an5\pos(540,1327)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}RESTAURANTES{\c&HFFFFFF&\fscx100\fscy100} EM FUNÇÃO
+Dialogue: 1,0:02:24.22,0:02:24.46,Cap,,0,0,0,,{\an5\pos(540,1327)}RESTAURANTES {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}EM{\c&HFFFFFF&\fscx100\fscy100} FUNÇÃO
+Dialogue: 1,0:02:24.46,0:02:25.45,Cap,,0,0,0,,{\an5\pos(540,1327)}RESTAURANTES EM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FUNÇÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:25.45,0:02:25.77,Cap,,0,0,0,,{\an5\pos(540,1327)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} STELLA.
+Dialogue: 1,0:02:25.77,0:02:26.80,Cap,,0,0,0,,{\an5\pos(540,1327)}PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}STELLA.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:26.80,0:02:27.68,Cap,,0,0,0,,{\an5\pos(540,1345)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SABE{\c&HFFFFFF&\fscx100\fscy100} AS TAÇAS
+Dialogue: 1,0:02:27.68,0:02:27.92,Cap,,0,0,0,,{\an5\pos(540,1345)}SABE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AS{\c&HFFFFFF&\fscx100\fscy100} TAÇAS
+Dialogue: 1,0:02:27.92,0:02:28.88,Cap,,0,0,0,,{\an5\pos(540,1345)}SABE AS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TAÇAS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:28.88,0:02:29.20,Cap,,0,0,0,,{\an5\pos(540,1340)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TANTO{\c&HFFFFFF&\fscx100\fscy100} DE TREINAMENTO
+Dialogue: 1,0:02:29.20,0:02:29.28,Cap,,0,0,0,,{\an5\pos(540,1340)}TANTO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DE{\c&HFFFFFF&\fscx100\fscy100} TREINAMENTO
+Dialogue: 1,0:02:29.28,0:02:29.76,Cap,,0,0,0,,{\an5\pos(540,1340)}TANTO DE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TREINAMENTO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:29.76,0:02:29.84,Cap,,0,0,0,,{\an5\pos(540,1340)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} A GALERA RECEBE.
+Dialogue: 1,0:02:29.84,0:02:29.92,Cap,,0,0,0,,{\an5\pos(540,1340)}E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} GALERA RECEBE.
+Dialogue: 1,0:02:29.92,0:02:30.24,Cap,,0,0,0,,{\an5\pos(540,1340)}E A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}GALERA{\c&HFFFFFF&\fscx100\fscy100} RECEBE.
+Dialogue: 1,0:02:30.24,0:02:30.90,Cap,,0,0,0,,{\an5\pos(540,1340)}E A GALERA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}RECEBE.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:30.90,0:02:30.98,Cap,,0,0,0,,{\an5\pos(540,1300)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}EU{\c&HFFFFFF&\fscx100\fscy100} IMAGINO QUE PRA
+Dialogue: 1,0:02:30.98,0:02:31.30,Cap,,0,0,0,,{\an5\pos(540,1300)}EU {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}IMAGINO{\c&HFFFFFF&\fscx100\fscy100} QUE PRA
+Dialogue: 1,0:02:31.30,0:02:31.54,Cap,,0,0,0,,{\an5\pos(540,1300)}EU IMAGINO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} PRA
+Dialogue: 1,0:02:31.54,0:02:31.70,Cap,,0,0,0,,{\an5\pos(540,1300)}EU IMAGINO QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:31.70,0:02:32.22,Cap,,0,0,0,,{\an5\pos(540,1301)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}BIRRA MORETTI{\c&HFFFFFF&\fscx100\fscy100} ISSO É
+Dialogue: 1,0:02:32.22,0:02:32.38,Cap,,0,0,0,,{\an5\pos(540,1301)}BIRRA MORETTI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ISSO{\c&HFFFFFF&\fscx100\fscy100} É
+Dialogue: 1,0:02:32.38,0:02:32.54,Cap,,0,0,0,,{\an5\pos(540,1301)}BIRRA MORETTI ISSO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}É{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:32.54,0:02:32.62,Cap,,0,0,0,,{\an5\pos(540,1351)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} MESMA COISA
+Dialogue: 1,0:02:32.62,0:02:32.86,Cap,,0,0,0,,{\an5\pos(540,1351)}A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}MESMA{\c&HFFFFFF&\fscx100\fscy100} COISA
+Dialogue: 1,0:02:32.86,0:02:33.34,Cap,,0,0,0,,{\an5\pos(540,1351)}A MESMA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}COISA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:33.34,0:02:33.50,Cap,,0,0,0,,{\an5\pos(540,1358)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} HEINEKEN QUE
+Dialogue: 1,0:02:33.50,0:02:34.06,Cap,,0,0,0,,{\an5\pos(540,1358)}A {\c&H70BAE2&\t(0,90,\fscx138\fscy138)\t(90,170,\fscx130\fscy130)}HEINEKEN{\c&HFFFFFF&\fscx100\fscy100} QUE
+Dialogue: 1,0:02:34.06,0:02:34.30,Cap,,0,0,0,,{\an5\pos(540,1358)}A HEINEKEN {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:34.30,0:02:34.46,Cap,,0,0,0,,{\an5\pos(540,1358)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VAI{\c&HFFFFFF&\fscx100\fscy100} REALMENTE BATER
+Dialogue: 1,0:02:34.46,0:02:34.78,Cap,,0,0,0,,{\an5\pos(540,1358)}VAI {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}REALMENTE{\c&HFFFFFF&\fscx100\fscy100} BATER
+Dialogue: 1,0:02:34.78,0:02:35.18,Cap,,0,0,0,,{\an5\pos(540,1358)}VAI REALMENTE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}BATER{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:35.18,0:02:35.42,Cap,,0,0,0,,{\an5\pos(540,1317)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DE{\c&HFFFFFF&\fscx100\fscy100} FRENTE COM
+Dialogue: 1,0:02:35.42,0:02:36.22,Cap,,0,0,0,,{\an5\pos(540,1317)}DE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FRENTE{\c&HFFFFFF&\fscx100\fscy100} COM
+Dialogue: 1,0:02:36.22,0:02:36.46,Cap,,0,0,0,,{\an5\pos(540,1317)}DE FRENTE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}COM{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:36.46,0:02:36.62,Cap,,0,0,0,,{\an5\pos(540,1360)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}A{\c&HFFFFFF&\fscx100\fscy100} STELLA.
+Dialogue: 1,0:02:36.62,0:02:37.82,Cap,,0,0,0,,{\an5\pos(540,1360)}A {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}STELLA.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:38.09,0:02:39.13,Cap,,0,0,0,,{\an5\pos(540,1315)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ENTÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:39.13,0:02:39.29,Cap,,0,0,0,,{\an5\pos(540,1319)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}EU{\c&HFFFFFF&\fscx100\fscy100} ACHO FANTÁSTICO
+Dialogue: 1,0:02:39.29,0:02:39.61,Cap,,0,0,0,,{\an5\pos(540,1319)}EU {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ACHO{\c&HFFFFFF&\fscx100\fscy100} FANTÁSTICO
+Dialogue: 1,0:02:39.61,0:02:40.54,Cap,,0,0,0,,{\an5\pos(540,1319)}EU ACHO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FANTÁSTICO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:40.54,0:02:41.66,Cap,,0,0,0,,{\an5\pos(540,1319)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FICAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:41.66,0:02:42.62,Cap,,0,0,0,,{\an5\pos(540,1331)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}VIAJANDO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:42.62,0:02:43.37,Cap,,0,0,0,,{\an5\pos(540,1342)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}SOBRE{\c&HFFFFFF&\fscx100\fscy100} TODAS AS
+Dialogue: 1,0:02:43.37,0:02:43.69,Cap,,0,0,0,,{\an5\pos(540,1342)}SOBRE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TODAS{\c&HFFFFFF&\fscx100\fscy100} AS
+Dialogue: 1,0:02:43.69,0:02:43.85,Cap,,0,0,0,,{\an5\pos(540,1342)}SOBRE TODAS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:43.85,0:02:44.78,Cap,,0,0,0,,{\an5\pos(540,1313)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ÁREAS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:44.78,0:02:44.94,Cap,,0,0,0,,{\an5\pos(540,1324)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} FORAM ENVOLVIDAS
+Dialogue: 1,0:02:44.94,0:02:45.26,Cap,,0,0,0,,{\an5\pos(540,1324)}QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}FORAM{\c&HFFFFFF&\fscx100\fscy100} ENVOLVIDAS
+Dialogue: 1,0:02:45.26,0:02:45.82,Cap,,0,0,0,,{\an5\pos(540,1324)}QUE FORAM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ENVOLVIDAS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:45.82,0:02:46.65,Cap,,0,0,0,,{\an5\pos(540,1324)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ALI.{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:46.65,0:02:46.97,Cap,,0,0,0,,{\an5\pos(540,1352)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TODAS{\c&HFFFFFF&\fscx100\fscy100} AS ETAPAS
+Dialogue: 1,0:02:46.97,0:02:47.21,Cap,,0,0,0,,{\an5\pos(540,1352)}TODAS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AS{\c&HFFFFFF&\fscx100\fscy100} ETAPAS
+Dialogue: 1,0:02:47.21,0:02:48.41,Cap,,0,0,0,,{\an5\pos(540,1352)}TODAS AS {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}ETAPAS{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:48.54,0:02:48.78,Cap,,0,0,0,,{\an5\pos(540,1330)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} UMA EMPRESA
+Dialogue: 1,0:02:48.78,0:02:49.02,Cap,,0,0,0,,{\an5\pos(540,1330)}QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}UMA{\c&HFFFFFF&\fscx100\fscy100} EMPRESA
+Dialogue: 1,0:02:49.02,0:02:49.26,Cap,,0,0,0,,{\an5\pos(540,1330)}QUE UMA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}EMPRESA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:49.26,0:02:50.06,Cap,,0,0,0,,{\an5\pos(540,1355)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DESSA{\c&HFFFFFF&\fscx100\fscy100} PASSA PRA
+Dialogue: 1,0:02:50.06,0:02:50.38,Cap,,0,0,0,,{\an5\pos(540,1355)}DESSA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PASSA{\c&HFFFFFF&\fscx100\fscy100} PRA
+Dialogue: 1,0:02:50.38,0:02:50.78,Cap,,0,0,0,,{\an5\pos(540,1355)}DESSA PASSA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:50.78,0:02:51.02,Cap,,0,0,0,,{\an5\pos(540,1355)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}TOMAR{\c&HFFFFFF&\fscx100\fscy100} UMA DECISÃO
+Dialogue: 1,0:02:51.02,0:02:51.18,Cap,,0,0,0,,{\an5\pos(540,1355)}TOMAR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}UMA{\c&HFFFFFF&\fscx100\fscy100} DECISÃO
+Dialogue: 1,0:02:51.18,0:02:51.66,Cap,,0,0,0,,{\an5\pos(540,1355)}TOMAR UMA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DECISÃO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:51.66,0:02:51.82,Cap,,0,0,0,,{\an5\pos(540,1355)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}E{\c&HFFFFFF&\fscx100\fscy100} CHEGAR NO PONTO
+Dialogue: 1,0:02:51.82,0:02:52.14,Cap,,0,0,0,,{\an5\pos(540,1355)}E {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CHEGAR{\c&HFFFFFF&\fscx100\fscy100} NO PONTO
+Dialogue: 1,0:02:52.14,0:02:52.30,Cap,,0,0,0,,{\an5\pos(540,1355)}E CHEGAR {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NO{\c&HFFFFFF&\fscx100\fscy100} PONTO
+Dialogue: 1,0:02:52.30,0:02:52.54,Cap,,0,0,0,,{\an5\pos(540,1355)}E CHEGAR NO {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PONTO{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:52.54,0:02:52.70,Cap,,0,0,0,,{\an5\pos(540,1322)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} CHEGARAM NÉ?
+Dialogue: 1,0:02:52.70,0:02:53.18,Cap,,0,0,0,,{\an5\pos(540,1322)}QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}CHEGARAM{\c&HFFFFFF&\fscx100\fscy100} NÉ?
+Dialogue: 1,0:02:53.18,0:02:53.42,Cap,,0,0,0,,{\an5\pos(540,1322)}QUE CHEGARAM {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}NÉ?{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:53.42,0:02:53.58,Cap,,0,0,0,,{\an5\pos(540,1327)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}QUE{\c&HFFFFFF&\fscx100\fscy100} DÁ PRA LANÇAR
+Dialogue: 1,0:02:53.58,0:02:53.74,Cap,,0,0,0,,{\an5\pos(540,1327)}QUE {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DÁ{\c&HFFFFFF&\fscx100\fscy100} PRA LANÇAR
+Dialogue: 1,0:02:53.74,0:02:53.90,Cap,,0,0,0,,{\an5\pos(540,1327)}QUE DÁ {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}PRA{\c&HFFFFFF&\fscx100\fscy100} LANÇAR
+Dialogue: 1,0:02:53.90,0:02:54.22,Cap,,0,0,0,,{\an5\pos(540,1327)}QUE DÁ PRA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}LANÇAR{\c&HFFFFFF&\fscx100\fscy100}
+Dialogue: 1,0:02:54.22,0:02:54.54,Cap,,0,0,0,,{\an5\pos(540,1377)}{\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}AGORA{\c&HFFFFFF&\fscx100\fscy100} DEZEMBRO.
+Dialogue: 1,0:02:54.54,0:02:55.07,Cap,,0,0,0,,{\an5\pos(540,1377)}AGORA {\c&H70BAE2&\t(0,90,\fscx124\fscy124)\t(90,170,\fscx116\fscy116)}DEZEMBRO.{\c&HFFFFFF&\fscx100\fscy100}

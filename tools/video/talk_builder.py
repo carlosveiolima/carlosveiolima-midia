@@ -31,6 +31,18 @@ def env(k, a, b):
     seg = x[i0:i1] ** 2; win = 320
     e = np.convolve(seg, np.ones(win) / win, 'same')
     return a + (int(np.argmin(e)) / 16000)
+# corta pausas internas: divide o trecho onde o silêncio entre duas palavras passa de max_gap
+GAP = C.get('max_gap')
+if GAP:
+    novo = []
+    for sg in C['segs']:
+        k, i0, i1 = sg[:3]; ini = i0
+        for i in range(i0, i1):
+            if W[k][i + 1][1] - W[k][i][2] > GAP:
+                novo.append([k, ini, i] + ([sg[3], None] if ini == i0 and len(sg) > 3 else []))
+                ini = i + 1
+        novo.append([k, ini, i1] + ([None, sg[4]] if len(sg) > 4 else []))
+    C['segs'] = novo
 segs = []
 for sg in C['segs']:
     k, i0, i1 = sg[:3]; w = W[k]
